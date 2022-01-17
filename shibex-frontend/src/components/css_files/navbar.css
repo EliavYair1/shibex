@@ -2,3 +2,12 @@
   width: 2.5em;
   height: 2.5em;
 }
+.navbarColor {
+  background-color: #fcd032;
+}
+.nav-item .navLinkColor {
+  color: rgb(12, 188, 167);
+}
+.nav-item .navLinkColor:hover {
+  color: red;
+}

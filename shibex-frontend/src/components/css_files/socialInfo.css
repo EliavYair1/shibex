@@ -3,6 +3,12 @@
   padding-left: 10em;
   width: 35em;
 }
-.btn-wrapper {
-  margin-left: 8em;
+.btn-wrapper .socialBtn {
+  padding: 0.9em;
+  position: relative;
+  left: 35%;
+  border-radius: 47%;
 }
+/* .socialContainer {
+  margin-top: 8em;
+} */

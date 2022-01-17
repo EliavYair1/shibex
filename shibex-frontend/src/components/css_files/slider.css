@@ -2,7 +2,7 @@
   width: 12px !important;
   height: 12px !important;
   margin: 0 !important;
-  background-color: #fff !important;
+  background-color: red !important;
 }
 .carousel-indicators li {
   display: inline-block !important;
@@ -12,7 +12,7 @@
   text-indent: -999px !important;
   cursor: pointer !important;
   background-color: rgba(0, 0, 0, 0) !important;
-  border: 1px solid #fff !important;
+  border: 1px solid #fcd032 !important;
   border-radius: 10px !important;
   padding: 2px !important;
   margin-left: 10px !important;
@@ -22,4 +22,7 @@
   border-radius: 45% !important;
   width: 8em !important  ;
   padding: 1.2em !important;
+}
+.btn-slider:focus {
+  background-color: red;
 }

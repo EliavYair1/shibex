@@ -6,11 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { ParallaxProvider } from 'react-scroll-parallax';
+
 import { BrowserRouter } from 'react-router-dom';
 ReactDOM.render(
   <BrowserRouter>
     <React.StrictMode>
-      <App />
+      <ParallaxProvider>
+        <App />
+      </ParallaxProvider>
     </React.StrictMode>
   </BrowserRouter>,
   document.getElementById('root')
