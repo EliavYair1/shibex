@@ -2,6 +2,7 @@ import slider1 from '../images/2021-Was-a-Great-Year-for-Shiba-Inu-Will-the-Hype
 import slider2 from '../images/ee4c06a1-33f1-471d-9128-77443bf7f6ea_1140x641.jpg';
 import slider3 from '../images/792212b15a1c2afa2281eb934519b1f6.jpg';
 import './css_files/slider.css';
+import { Link } from 'react-router-dom';
 const Slider = () => {
   return (
     <div
@@ -27,7 +28,9 @@ const Slider = () => {
             alt="sliderImages"
           />
           <div className="carousel-caption mb-5">
-            <button className=" btn-primary btn-lg">Join Shibex</button>
+            <Link to="/" className="btn-slider btn btn-dark btn-lg">
+              Join Shibex
+            </Link>
 
             {/*  <Link to="/signup" className="btn btn-secondary text-dark w-20">
                 Sign Up
@@ -41,8 +44,10 @@ const Slider = () => {
             style={{ height: '60vh', width: '100vw' }}
             alt="godOfWar"
           />
-          <div className="carousel-caption mb-5">
-            <button className="btn btn-primary btn-lg">Buy Shibex</button>
+          <div className="carousel-caption mb-5  ">
+            <Link to="/" className="btn-slider btn btn-dark btn-lg">
+              Buy Shibex
+            </Link>
             {/*  {!user?.premium ? (
                 <Link
                   to="/signupPremium"
@@ -65,7 +70,9 @@ const Slider = () => {
             alt="playerimage"
           />
           <div className="carousel-caption mb-5">
-            <button className="btn btn-primary btn-lg">Play Shibex</button>
+            <Link to="/" className="btn-slider btn btn-dark btn-lg ">
+              Play Shibex
+            </Link>
 
             {/*   <Link to="/store" className="btn btn-secondary text-dark w-20">
                 To Store

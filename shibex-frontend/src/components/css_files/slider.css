@@ -18,3 +18,8 @@
   margin-left: 10px !important;
   margin-right: 10px !important;
 }
+.btn-slider {
+  border-radius: 45% !important;
+  width: 8em !important  ;
+  padding: 1.2em !important;
+}
