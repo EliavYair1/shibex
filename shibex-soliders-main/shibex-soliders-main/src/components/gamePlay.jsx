@@ -1,5 +1,5 @@
-import shivaVideo from "../videos/PRUEBA 31)_Trim.mp4";
-import "./css_files/gamePlay.css";
+import shivaVideo from '../videos/PRUEBATrim.mp4';
+import './css_files/gamePlay.css';
 
 const GamePlay = () => {
   return (
@@ -24,7 +24,7 @@ const GamePlay = () => {
             </p>
             <br />
             <button className="platBtn btn-lg btn-warning rounded-pill mb-5">
-              {" "}
+              {' '}
               <strong className="innerBtn">Let's Play</strong>
             </button>
           </div>
