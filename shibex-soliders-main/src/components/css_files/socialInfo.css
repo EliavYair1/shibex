@@ -1,0 +1,49 @@
+.img-wrapper .shiba {
+  margin: 100px;
+  padding-left: 10em;
+  width: 35em;
+}
+.btn-wrapper .socialBtn {
+  padding: 0.9em;
+  position: relative;
+  /* left: 35%; */
+  width: 15em;
+}
+.paragraph1 {
+  font-family: var(--gameFont2);
+}
+.headerTitle {
+  font-family: var(--gameFont);
+  z-index: 10;
+}
+.btn {
+  font-family: var(--gameFont);
+}
+.custom-shape-divider-top-1642533550 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1642533550 svg {
+  position: relative;
+  display: block;
+  width: calc(182% + 1.3px);
+  height: 155px;
+}
+
+.custom-shape-divider-top-1642533550 .shape-fill {
+  fill: #fcd032;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1642533550 svg {
+    width: calc(182% + 1.3px);
+    height: 113px;
+  }
+}
