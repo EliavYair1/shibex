@@ -3,6 +3,7 @@
   padding-left: 10em;
   width: 35em;
 }
+
 .btn-wrapper .socialBtn {
   padding: 0.9em;
   position: relative;
@@ -45,5 +46,10 @@
   .custom-shape-divider-top-1642533550 svg {
     width: calc(182% + 1.3px);
     height: 113px;
+  }
+  .img-wrapper .shiba {
+    width: 25em;
+    position: relative;
+    right: 12em;
   }
 }

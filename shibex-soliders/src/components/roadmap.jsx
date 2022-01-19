@@ -21,10 +21,11 @@ const Roadmap = () => {
       <div className="roadmapContainer">
         <div className="row justify-content-center text-center mb-4">
           <div className="col-xl-8 col-lg-9">
-            <h2 className="h1">Roadmap</h2>
-            <p className="lead">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+            <h1 className="display-1 roadmapHead">Roadmap</h1>
+            <p className="lead col-6 ">
+              Shibex is the token that allows you to play all the games
+              developed by the talented Shibex Team, we plan to make one
+              multiplayer arcades game.
             </p>
           </div>
         </div>
@@ -39,8 +40,10 @@ const Roadmap = () => {
               >
                 <div className="process-circle bg-primary" />
                 <div>
-                  <span className="text-small text-muted">October 2016</span>
-                  <h5 className="mb-0">Secured Series-A funding</h5>
+                  <span className="text-small text-muted ">Milestone #1</span>
+                  <h5 className="mb-0 milestoneText ">
+                    website & 65k$ raised during pre-ICO
+                  </h5>
                 </div>
               </li>
               <li
@@ -51,8 +54,10 @@ const Roadmap = () => {
               >
                 <div className="process-circle bg-primary" />
                 <div>
-                  <span className="text-small text-muted">April 2017</span>
-                  <h5 className="mb-0">New CTO: Joe Schultz</h5>
+                  <span className="text-small text-muted">Milestone #2</span>
+                  <h5 className="mb-0 milestoneText">
+                    ShibexRide lunched & finish the private sale
+                  </h5>
                 </div>
               </li>
               <li
@@ -63,8 +68,10 @@ const Roadmap = () => {
               >
                 <div className="process-circle bg-primary" />
                 <div>
-                  <span className="text-small text-muted">October 2017</span>
-                  <h5 className="mb-0">v1.0 Ships</h5>
+                  <span className="text-small text-muted">Milestone #3</span>
+                  <h5 className="mb-0 milestoneText">
+                    ShibexRide Beta droped connected to Iotex blockchain
+                  </h5>
                 </div>
               </li>
               <li
@@ -75,20 +82,16 @@ const Roadmap = () => {
               >
                 <div className="process-circle bg-primary" />
                 <div>
-                  <span className="text-small text-muted">February 2018</span>
-                  <h5 className="mb-0">Featured in Wired</h5>
-                </div>
-              </li>
-              <li
-                data-aos="fade-left"
-                data-aos-easing="ease-in"
-                data-aos-duration="5000"
-                // className="aos-init aos-animate"
-              >
-                <div className="process-circle bg-primary" />
-                <div>
-                  <span className="text-small text-muted">September 2018</span>
-                  <h5 className="mb-0">v.20 Ships</h5>
+                  <span
+                    className="text-small milestoneHead"
+                    style={{ color: '#FCD032' }}
+                  >
+                    Ultimate Goal
+                  </span>
+                  <h5 className="mb-0 milestoneUlti  text-center">
+                    {' '}
+                    Shibex tradable on mimoSwap & new game on development
+                  </h5>
                 </div>
               </li>
             </ol>

@@ -22,14 +22,7 @@ nav,
 section {
   display: block;
 }
-/* *,
-::after,
-::before {
-  box-sizing: border-box;
-} */
-/* user agent stylesheet section {
-  display: block;
-} */
+
 .purchaseBtn {
   background-color: #fcd032 !important;
 }
@@ -47,8 +40,14 @@ section {
   font-family: var(--gameFont2);
 }
 .timerBox {
-  width: 45em;
-  height: 12em;
-  /* margin-left: 20px!important; */
-  margin-right: 10px;
+  width: 25em;
+  height: 14em;
+  margin-left: 8em;
+}
+@media (max-width: 767px) {
+  .timerBox {
+    width: 25em;
+    height: 14em;
+    margin-left: 2em;
+  }
 }

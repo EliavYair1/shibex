@@ -1,10 +1,10 @@
-import logo from "../images/Shiba_Inu_coin_logo.png";
-import "./css_files/socialInfo.css";
+import logo from '../images/Shiba_Inu_coin_logo.png';
+import './css_files/socialInfo.css';
 const SocialInfo = () => {
   return (
     <div
       className="socialContainer bg-dark p-5"
-      style={{ position: "relative" }}
+      style={{ position: 'relative' }}
     >
       <div className="custom-shape-divider-top-1642533550">
         <svg
@@ -19,18 +19,18 @@ const SocialInfo = () => {
           ></path>
         </svg>
       </div>
-      <div className="row flex-lg-row-reverse align-items-center px-5 mx-5">
+      <div className="row flex-lg-row-reverse align-items-center shibaHouse">
         <div className="img-wrapper col-12 col-sm-8 col-lg-6">
-          <img src={logo} alt="" className="shiba ms-5" />
+          <img src={logo} alt="shiba" className="shiba" />
         </div>
         <div className="col-lg-6">
           <h1
             className="display-5 fw-bold lh-1 mb-3 mb-5 text-center headerTitle"
-            style={{ color: "#fcd032" }}
+            style={{ color: '#fcd032' }}
           >
             Shibex Soliders
           </h1>
-          <p className="lead text-light text-center lh-lg paragraph1">
+          <p className="lead text-light text-center m-4 lh-lg paragraph1">
             Our community grows stronger every day. Please follow our social
             platforms to get the most up-to-date, accurate SHIBX information.
             Using the links below, you can join our groups alongside the members

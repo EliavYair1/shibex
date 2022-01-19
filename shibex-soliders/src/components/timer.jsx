@@ -4,12 +4,12 @@ const Timer = () => {
     <section className="bg-primary-3 o-hidden" style={{ position: 'relative' }}>
       <div className="container layer-1 ">
         <div className="row justify-content-between align-items-center">
-          <div className="col-xl-6 col-md-6 text-light">
+          <div className="col-xl-6 text-light">
             <h1 className="display-6 timerHeader ">
               A Decentralized GameFi Token that Evolved into the amazing IoTex
               Ecosystem !
             </h1>
-            <p className="lead timerPara">
+            <p className="lead timerPara ms-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -33,7 +33,7 @@ const Timer = () => {
                 </span>
               </div>
             </div>
-            <div className="card card-body mt-4 shadow-lg timerBox ">
+            <div className="card card-body mt-4 shadow-lg timerBox  ">
               <div className="row">
                 <div
                   className="col-12 mb-4 add-countdown-time"

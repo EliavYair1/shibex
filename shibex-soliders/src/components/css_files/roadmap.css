@@ -86,6 +86,7 @@ user agent stylesheet section {
   padding-left: 12px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 122px;
 }
 *,
 ::after,
@@ -380,6 +381,9 @@ user agent stylesheet ol {
 .lead {
   font-size: 1.25rem;
   font-weight: 400;
+  font-family: var(--gameFont2);
+  text-align: center;
+  margin-left: 15em;
 }
 p {
   margin-top: 0;
@@ -1036,7 +1040,7 @@ user agent stylesheet ol {
 }
 @media (min-width: 768px) {
   .text-light .process-vertical li:not(:last-child) :after {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(236, 10, 10, 0.849);
   }
 }
 .custom-shape-divider-bottom-1642543135 {
@@ -1240,7 +1244,7 @@ user agent stylesheet ol {
 }
 /* ############ */
 .process-circle:empty.bg-primary:after {
-  background-color: #5f5b5e;
+  background-color: #fcd032;
 }
 .process-circle:empty:after {
   content: '';
@@ -1252,4 +1256,14 @@ user agent stylesheet ol {
 ::after,
 ::before {
   box-sizing: border-box;
+}
+.milestoneText {
+  font-family: var(--gameFont);
+}
+.milestoneUlti {
+  font-family: var(--gameFont);
+  /* margin-left: 20em; */
+}
+.roadmapHead {
+  font-family: var(--gameFont);
 }
