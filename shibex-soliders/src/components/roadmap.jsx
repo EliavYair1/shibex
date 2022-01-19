@@ -31,12 +31,12 @@ const Roadmap = () => {
         </div>
         <div className="row o-hidden o-lg-visible">
           <div className="col d-flex flex-column align-items-center">
-            <ol className="process-vertical">
+            <ol className="process-vertical mt-5 mb-5">
               <li
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in"
-                // className="aos-init aos-animate"
+                className="aos-init aos-animate ballsItem "
               >
                 <div className="process-circle bg-primary" />
                 <div>
@@ -50,7 +50,7 @@ const Roadmap = () => {
                 data-aos="fade-right"
                 data-aos-easing="ease-in"
                 data-aos-duration="2000"
-                // className="aos-init aos-animate"
+                className="aos-init aos-animate ballsItem "
               >
                 <div className="process-circle bg-primary" />
                 <div>
@@ -64,7 +64,7 @@ const Roadmap = () => {
                 data-aos="fade-left"
                 data-aos-duration="3000"
                 data-aos-easing="ease-in"
-                // className="aos-init aos-animate"
+                className="aos-init aos-animate ballsItem "
               >
                 <div className="process-circle bg-primary" />
                 <div>
@@ -78,9 +78,9 @@ const Roadmap = () => {
                 data-aos="fade-right"
                 data-aos-easing="ease-in"
                 data-aos-duration="4000"
-                // className="aos-init aos-animate"
+                className="aos-init aos-animate ballsItem "
               >
-                <div className="process-circle bg-primary" />
+                <div className="process-circle process-ultimate bg-primary" />
                 <div>
                   <span
                     className="text-small milestoneHead"

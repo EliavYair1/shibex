@@ -38,6 +38,7 @@ section {
 }
 .timerClock {
   font-family: var(--gameFont2);
+  font-size: 0.6em;
 }
 .timerBox {
   width: 25em;

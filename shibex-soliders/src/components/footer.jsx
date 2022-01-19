@@ -1,10 +1,10 @@
-import "./css_files/footer.css";
+import './css_files/footer.css';
 
 const Footer = () => {
   return (
     <footer
-      className="footerContainer pb-5 bg-primary-3 text-light"
-      style={{ position: "relative" }}
+      className="footerContainer pb-5 bg-primary-3 text-dark"
+      style={{ position: 'relative' }}
     >
       <div className="custom-shape-divider-top-1642532432">
         <svg

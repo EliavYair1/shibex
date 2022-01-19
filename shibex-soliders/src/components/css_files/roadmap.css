@@ -383,7 +383,7 @@ user agent stylesheet ol {
   font-weight: 400;
   font-family: var(--gameFont2);
   text-align: center;
-  margin-left: 15em;
+  margin-left: 12em;
 }
 p {
   margin-top: 0;
@@ -1073,6 +1073,11 @@ user agent stylesheet ol {
 }
 .process-circle:empty.bg-primary {
   background: rgba(219, 22, 47, 0.05) !important;
+  box-shadow: 0 0 10px #ffff, 0 0 20px #ffff, 0 0 40px #ffff, 0 0 80px #ffff;
+}
+.process-ultimate:empty.bg-primary {
+  box-shadow: 0 0 10px #fcd032, 0 0 20px #fcd032, 0 0 40px #fcd032,
+    0 0 80px #fcd032;
 }
 @media (min-width: 768px) {
   .process-vertical li .process-circle {
@@ -1266,4 +1271,7 @@ user agent stylesheet ol {
 }
 .roadmapHead {
   font-family: var(--gameFont);
+}
+.ballsItem {
+  margin-top: 4em;
 }

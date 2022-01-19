@@ -8,6 +8,7 @@
 
 .footerContainer {
   background-color: #fcd032 !important;
+  font-family: var(--gameFont);
 }
 footer {
   padding: 6rem 0;
