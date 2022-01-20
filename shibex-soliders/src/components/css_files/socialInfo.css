@@ -7,9 +7,9 @@
 .btn-wrapper .socialBtn {
   padding: 0.9em;
   position: relative;
-  /* left: 35%; */
   width: 15em;
 }
+
 .paragraph1 {
   font-family: var(--gameFont2);
 }

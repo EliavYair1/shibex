@@ -1,5 +1,42 @@
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 import './css_files/roadmap.css';
+
 const Roadmap = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.7,
+  });
+  const animation = useAnimation();
+  useEffect(() => {
+    console.log('use effect hook,inView =', inView);
+
+    if (inView) {
+      //end point of animation
+      animation.start({ scale: 1, rotate: 360, transition: { duration: 0.3 } });
+    }
+    if (!inView) {
+      //start point of animation
+      animation.start({ scale: 0, rotate: 0 });
+    }
+  }, [inView, animation]);
+
+  const animation2 = useAnimation();
+  useEffect(() => {
+    console.log('use effect hook,inView =', inView);
+
+    if (inView) {
+      //end point of animation2
+      animation2.start({
+        opacity: 1,
+        transition: { duration: 0.5, delay: 0.2 },
+      });
+    }
+    if (!inView) {
+      //start point of animation2
+      animation2.start({ opacity: 0 });
+    }
+  }, [inView, animation2]);
   return (
     <section
       className="sectionRoadmap bg-primary-3 text-light"
@@ -19,16 +56,24 @@ const Roadmap = () => {
         </svg>
       </div>
       <div className="roadmapContainer">
-        <div className="row justify-content-center text-center mb-4">
-          <div className="col-xl-8 col-lg-9">
-            <h1 className="display-1 roadmapHead">Roadmap</h1>
-            <p className="lead col-6 ">
+        <div className="row text-center mb-4">
+          <div className="col-12 " ref={ref}>
+            <motion.h1 className="display-1 roadmapHead" animate={animation2}>
+              Roadmap
+            </motion.h1>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-4"></div>
+          <div className="col-4 " ref={ref}>
+            <motion.p className="lead text-center" animate={animation}>
               Shibex is the token that allows you to play all the games
               developed by the talented Shibex Team, we plan to make one
               multiplayer arcades game.
-            </p>
+            </motion.p>
           </div>
         </div>
+
         <div className="row o-hidden o-lg-visible">
           <div className="col d-flex flex-column align-items-center">
             <ol className="process-vertical mt-5 mb-5">

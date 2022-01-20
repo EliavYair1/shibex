@@ -46,26 +46,27 @@ const GamePlay = () => {
   return (
     <>
       <div className="container mt-3 gamePlay-container align-center">
-        <div className="header" ref={ref}>
-          <motion.h1
-            className="text-center display-1 gameplayHeader mb-5 mt-5"
-            animate={animation2}
-          >
-            The Shibex Games
-          </motion.h1>
+        <div className="row">
+          <div className="col-12">
+            <div className="header" ref={ref}>
+              <motion.h1
+                className="text-center display-1 gameplayHeader mb-3 mt-5"
+                animate={animation2}
+              >
+                The Shibex Games
+              </motion.h1>
+            </div>
+          </div>
         </div>
         <div className="row ">
-          <div className="col-8 text-center video-container">
+          <div className="col-8 text-center video-container ">
             <video width="1000" height="400" controls src={shivaVideo}></video>
           </div>
-          {/* <div className="col-6">
-            <br />
-            <br />
-            <br />
-          </div> */}
-          <div className="col-4 text-center play-button" ref={ref}>
+        </div>
+        <div className="row">
+          <div className="col-12 text-center buttonWrapper mt-5" ref={ref}>
             <motion.button
-              className="platBtn btn-lg btn-warning rounded-pill mb-5"
+              className="platBtn btn-lg btn-warning rounded-pill"
               animate={animation}
             >
               <strong className="innerBtn">Let's Play</strong>

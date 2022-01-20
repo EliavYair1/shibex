@@ -1,8 +1,69 @@
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import { useInView } from 'react-intersection-observer';
 import logo from '../images/shibexLogoSmall1.webp';
 import './css_files/socialInfo.css';
 
 const SocialInfo = () => {
+  const constraintsRef = useRef(null);
+  const { ref, inView } = useInView({
+    threshold: 0.8,
+  });
+  const animation = useAnimation();
+  useEffect(() => {
+    console.log('use effect hook,inView =', inView);
+
+    if (inView) {
+      //end point of animation
+      animation.start({ y: '0' });
+    }
+    if (!inView) {
+      //start point of animation
+      animation.start({ y: '-20vh' });
+    }
+  }, [inView, animation]);
+
+  const animation2 = useAnimation();
+  useEffect(() => {
+    console.log('use effect hook,inView =', inView);
+
+    if (inView) {
+      //end point of animation2
+      animation2.start({ x: '0' });
+    }
+    if (!inView) {
+      //start point of animation2
+      animation2.start({ x: '-100vw' });
+    }
+  }, [inView, animation2]);
+
+  const animation3 = useAnimation();
+  useEffect(() => {
+    console.log('use effect hook,inView =', inView);
+
+    if (inView) {
+      //end point of animation3
+      animation3.start({ rotate: 0 });
+    }
+    if (!inView) {
+      //start point of animation3
+      animation3.start({ rotate: -90 });
+    }
+  }, [inView, animation3]);
+
+  const animation4 = useAnimation();
+  useEffect(() => {
+    console.log('use effect hook,inView =', inView);
+
+    if (inView) {
+      //end point of animation4
+      animation4.start({ rotate: 0 });
+    }
+    if (!inView) {
+      //start point of animation4
+      animation4.start({ rotate: 90 });
+    }
+  }, [inView, animation4]);
   return (
     <div
       className="socialContainer bg-dark p-5"
@@ -22,42 +83,64 @@ const SocialInfo = () => {
         </svg>
       </div>
       <div className="row flex-lg-row-reverse align-items-center shibaHouse">
-        <div className="img-wrapper col-12 col-sm-8 col-lg-6">
-          <motion.img src={logo} alt="shiba" className="shiba" />
-        </div>
+        <motion.div className="img-wrapper col-12 col-sm-8 col-lg-6">
+          <motion.img
+            src={logo}
+            alt="shiba"
+            className="shiba"
+            drag
+            dragConstraints={{ top: 10, bottom: 5, right: 0, left: 10 }}
+            dragElastic={1.5}
+          />
+        </motion.div>
+
         <div className="col-lg-6">
-          <h1
-            className="display-5 fw-bold lh-1 mb-3 mb-5 text-center headerTitle"
-            style={{ color: '#fcd032' }}
-          >
-            Shibex Soliders
-          </h1>
-          <p className="lead text-light text-center m-4 lh-lg paragraph1">
-            Our community grows stronger every day. Please follow our social
-            platforms to get the most up-to-date, accurate SHIBX information.
-            Using the links below, you can join our groups alongside the members
-            of the ShibexSoldiers.
-          </p>
-          <div className="btn-wrapper me-5 text-center">
-            <button
-              type="button"
-              className="  btn btn-outline-info rounded-pill socialBtn mt-5"
+          <span className="header" ref={ref}>
+            <motion.h1
+              className="display-5 fw-bold lh-1 mb-3 mb-5 text-center headerTitle"
+              style={{ color: '#fcd032' }}
+              animate={animation}
             >
-              <a
-                href="https://twitter.com/ShibexSoliders"
-                style={{ textDecoration: 'none' }}
-                className="text-white"
+              Shibex Soliders
+            </motion.h1>
+          </span>
+          <span className="para" ref={ref}>
+            <motion.p
+              className="lead text-light text-center m-4 lh-lg paragraph1"
+              animate={animation2}
+            >
+              Our community grows stronger every day. Please follow our social
+              platforms to get the most up-to-date, accurate SHIBX information.
+              Using the links below, you can join our groups alongside the
+              members of the ShibexSoldiers.
+            </motion.p>
+          </span>
+          <div className="btn-wrapper me-5 text-center row">
+            <div className="col-6" ref={ref}>
+              <motion.button
+                type="button"
+                className="  btn btn-outline-info rounded-pill socialBtn mt-5"
+                animate={animation3}
               >
-                <i className="ms-3 bi bi-twitter">Twitter</i>
-              </a>
-            </button>
-            <button
-              type="button"
-              className="btn btn-outline-danger rounded-pill ms-5 socialBtn mt-5"
-            >
-              Telegram
-              <i className="ms-2 bi bi-telegram"></i>
-            </button>
+                <a
+                  href="https://twitter.com/ShibexSoliders"
+                  style={{ textDecoration: 'none' }}
+                  className="text-white"
+                >
+                  <i className="ms-3 bi bi-twitter">Twitter</i>
+                </a>
+              </motion.button>
+            </div>
+            <div className="col-6" ref={ref}>
+              <motion.button
+                type="button"
+                className="btn btn-outline-danger rounded-pill ms-5 socialBtn mt-5"
+                animate={animation4}
+              >
+                Telegram
+                <i className="ms-2 bi bi-telegram"></i>
+              </motion.button>
+            </div>
           </div>
         </div>
       </div>

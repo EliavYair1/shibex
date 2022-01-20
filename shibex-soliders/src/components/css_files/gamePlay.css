@@ -28,8 +28,3 @@ video {
   object-fit: cover;
   z-index: 10;
 }
-.play-button {
-  position: relative;
-  top: 500px;
-  right: 435px;
-}
