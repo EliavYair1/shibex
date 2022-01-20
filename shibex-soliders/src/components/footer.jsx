@@ -69,11 +69,6 @@ const Footer = () => {
             >
               <li className="nav-item">
                 <a href="#" className="nav-link">
-                  Demos
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link">
                   Pages
                 </a>
               </li>
@@ -102,6 +97,7 @@ const Footer = () => {
                 <a
                   href="https://www.instagram.com/shibexsoldiers/"
                   className="nav-link"
+                  target="_blank"
                 >
                   <i className="bi bi-instagram display-6"></i>
                 </a>
@@ -110,6 +106,7 @@ const Footer = () => {
                 <a
                   href=" https://twitter.com/ShibexSoldiers"
                   className="nav-link"
+                  target="_blank"
                 >
                   <i className="bi bi-twitter display-6"></i>
                 </a>
@@ -118,18 +115,18 @@ const Footer = () => {
                 <a
                   href="https://swap.mimo.exchange/#/swap?inputCurrency=0x838403e073a79719a0927a16642ca7dcdc642bd5"
                   className="nav-link"
+                  target="_blank"
                 >
                   <i className="bi bi-coin display-6"></i>
                 </a>
               </li>
               <li className="nav-item">
-                <a href="https://t.me/ShibexToken" className="nav-link">
+                <a
+                  href="https://t.me/ShibexToken"
+                  className="nav-link"
+                  target="_blank"
+                >
                   <i className="bi bi-telegram display-6"></i>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link">
-                  <i className="bi bi-meta display-6"></i>
                 </a>
               </li>
             </motion.ul>

@@ -126,6 +126,7 @@ const SocialInfo = () => {
                   href="https://twitter.com/ShibexSoliders"
                   style={{ textDecoration: 'none' }}
                   className="text-white"
+                  target="_blank"
                 >
                   <i className="ms-3 bi bi-twitter">Twitter</i>
                 </a>
@@ -137,8 +138,15 @@ const SocialInfo = () => {
                 className="btn btn-outline-danger rounded-pill ms-5 socialBtn mt-5"
                 animate={animation4}
               >
-                Telegram
-                <i className="ms-2 bi bi-telegram"></i>
+                <a
+                  href="https://t.me/ShibexToken"
+                  style={{ textDecoration: 'none' }}
+                  className="text-white"
+                  target="_blank"
+                >
+                  Telegram
+                  <i className="ms-2 bi bi-telegram"></i>
+                </a>
               </motion.button>
             </div>
           </div>
