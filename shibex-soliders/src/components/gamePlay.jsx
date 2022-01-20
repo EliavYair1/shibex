@@ -69,7 +69,14 @@ const GamePlay = () => {
               className="platBtn btn-lg btn-warning rounded-pill"
               animate={animation}
             >
-              <strong className="innerBtn">Let's Play</strong>
+              <a
+                href="https://shibex-soldiers.web.app/"
+                target="_blank"
+                className="text-dark"
+                style={{ textDecoration: 'none' }}
+              >
+                <strong className="innerBtn">Let's Play</strong>
+              </a>
             </motion.button>
           </div>
         </div>

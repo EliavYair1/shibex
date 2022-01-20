@@ -1,6 +1,6 @@
-import slider1 from '../images/shibexSlider1.jpg';
-import slider2 from '../images/ee4c06a1-33f1-471d-9128-77443bf7f6ea_1140x641.jpg';
-import slider3 from '../images/gameOver.png';
+import slider1 from '../images/shibexBlue.jpg';
+import slider2 from '../images/shibexPurple.jpg';
+import slider3 from '../images/shibexGreen.png';
 import './css_files/slider.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -22,9 +22,6 @@ const Slider = () => {
       transition={{ duration: 3 }}
       className="carousel slide   sliderShadow  "
       data-bs-ride="carousel"
-      // data-aos="fade-in"
-      // data-aos-easeing="ease-in"
-      // data-aos-duration="10000"
     >
       <ol className="carousel-indicators">
         <li
@@ -40,7 +37,7 @@ const Slider = () => {
           <img
             src={slider1}
             className="d-block "
-            style={{ height: '90vh', width: '100vw' }}
+            style={{ height: '100vh', width: '100vw' }}
             alt="sliderImages"
           />
           <motion.div
@@ -59,35 +56,35 @@ const Slider = () => {
               damping: 20,
             }}
           >
-            <Link
-              to="/"
+            <a
+              href="https://shibex-soldiers.web.app/"
               className="btn-slider btn btn-warning rounded-pill innerBtns btn-lg"
             >
               Let's Play
-            </Link>
+            </a>
           </motion.div>
         </div>
         <div className="carousel-item ">
           <img
             src={slider2}
             className="d-block "
-            style={{ height: '90vh', width: '100vw' }}
+            style={{ height: '100vh', width: '100vw' }}
             alt="godOfWar"
           />
           <div className="carousel-caption mb-5  ">
-            <Link
-              to="/"
+            <a
+              href="https://swap.mimo.exchange/#/swap?inputCurrency=0x838403e073a79719a0927a16642ca7dcdc642bd5"
               className="btn-slider btn btn-warning rounded-pill innerBtns btn-lg"
             >
               Buy Shibex
-            </Link>
+            </a>
           </div>
         </div>
         <div className="carousel-item">
           <img
             src={slider3}
             className="d-block "
-            style={{ height: '90vh', width: '100vw' }}
+            style={{ height: '100vh', width: '100vw' }}
             alt="playerimage"
           />
           <div className="carousel-caption mb-5">
