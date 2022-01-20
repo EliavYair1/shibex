@@ -1,6 +1,38 @@
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 import './css_files/footer.css';
 
 const Footer = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.9,
+  });
+
+  const animation = useAnimation();
+
+  useEffect(() => {
+    console.log('use effect hook,inView =', inView);
+
+    if (inView) {
+      animation.start({ opacity: 1, transition: { delay: 0.1 } });
+    }
+    if (!inView) {
+      animation.start({ opacity: 0 });
+    }
+  }, [inView, animation]);
+
+  const animation2 = useAnimation();
+
+  useEffect(() => {
+    console.log('use effect hook,inView =', inView);
+
+    if (inView) {
+      animation2.start({ y: '0' });
+    }
+    if (!inView) {
+      animation2.start({ y: '100vh' });
+    }
+  }, [inView, animation2]);
   return (
     <footer
       className="footerContainer pb-5 bg-primary-3 text-dark"
@@ -22,14 +54,19 @@ const Footer = () => {
       <div className="container">
         <div className="row mb-4 justify-content-center">
           <div className="col-auto">
-            <p className="text-center fs-4">
-              <span className="color_11">ShibexSoldiers are you ready? 🚀</span>
+            <p className="text-center fs-4" ref={ref}>
+              <motion.span className="color_11" animate={animation}>
+                ShibexSoldiers are you ready? 🚀
+              </motion.span>
             </p>
           </div>
         </div>
         <div className="row mb-4">
-          <div className="col">
-            <ul className="nav justify-content-center">
+          <div className="col" ref={ref}>
+            <motion.ul
+              className="nav justify-content-center"
+              animate={animation}
+            >
               <li className="nav-item">
                 <a href="#" className="nav-link">
                   Demos
@@ -55,29 +92,38 @@ const Footer = () => {
                   Elements
                 </a>
               </li>
-            </ul>
+            </motion.ul>
           </div>
         </div>
         <div className="row justify-content-center mt-5 mb-5">
-          <div className="col-auto">
-            <ul className="nav">
-              <li className="nav-item">
-                <a href="#" className="nav-link">
+          <div className="col-auto" ref={ref}>
+            <motion.ul className="nav" animate={animation2}>
+              <li className="nav-item" whileHover={{ color: '#fffff' }}>
+                <a
+                  href="https://www.instagram.com/shibexsoldiers/"
+                  className="nav-link"
+                >
                   <i className="bi bi-instagram display-6"></i>
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a
+                  href=" https://twitter.com/ShibexSoldiers"
+                  className="nav-link"
+                >
                   <i className="bi bi-twitter display-6"></i>
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a
+                  href="https://swap.mimo.exchange/#/swap?inputCurrency=0x838403e073a79719a0927a16642ca7dcdc642bd5"
+                  className="nav-link"
+                >
                   <i className="bi bi-coin display-6"></i>
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a href="https://t.me/ShibexToken" className="nav-link">
                   <i className="bi bi-telegram display-6"></i>
                 </a>
               </li>
@@ -86,18 +132,18 @@ const Footer = () => {
                   <i className="bi bi-meta display-6"></i>
                 </a>
               </li>
-            </ul>
+            </motion.ul>
           </div>
         </div>
         <div className="row justify-content-center text-center">
           <div className="col-xl-10">
-            <small className="text-muted">
+            <motion.small className="text-muted">
               ©2020 All Rights Reserved. Shibex® is a registered trademark of
               Your Company. Apple and the Apple logo are trademarks of Apple
               Inc., registered in the U.S. and other countries. Mac App Store is
               a service mark of Apple Inc. Google Play and the Google Play logo
               are trademarks of Google Inc.
-            </small>
+            </motion.small>
           </div>
         </div>
       </div>

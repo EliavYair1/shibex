@@ -1,6 +1,6 @@
-import slider1 from '../images/362039_c4c907280bc143338cbbbd0b937b84ff_mv2.webp';
+import slider1 from '../images/shibexSlider1.jpg';
 import slider2 from '../images/ee4c06a1-33f1-471d-9128-77443bf7f6ea_1140x641.jpg';
-import slider3 from '../images/maxresdefaultbla.jpg';
+import slider3 from '../images/gameOver.png';
 import './css_files/slider.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';

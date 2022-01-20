@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import "./css_files/navbar.css";
-import logo from "../images/Shiba_Inu_coin_logo.png";
+import { motion } from 'framer-motion';
+import './css_files/navbar.css';
+import logo from '../images/shibexLogoSmall1.webp';
+
 const Navbar = () => {
   return (
     <nav
@@ -9,7 +11,15 @@ const Navbar = () => {
     >
       <div className="container-fluid ">
         <a className="navbar-brand" href="#">
-          <img src={logo} alt="" className="shiba_logo" />
+          <motion.img
+            src={logo}
+            alt=""
+            className="shiba_logo"
+            animate={{
+              scale: [1, 1.2, 1.2, 0, 1],
+              rotate: [0, 0, 360, 0, 360],
+            }}
+          />
         </a>
         <button
           className="navbar-toggler"
@@ -25,62 +35,50 @@ const Navbar = () => {
         <div className=" collapse navbar-collapse " id="navbarsExample04 ">
           <ul className="navbar-nav me-auto mb-2 mb-md-0 myNav col-12 d-flex justify-content-evenly ">
             <li className="nav-item">
-              <a
+              <motion.a
                 className="nav-link navLinkColor active fw-bold fs-4"
                 aria-current="page"
                 href="#"
+                // initial={}
+                whileHover={{ color: 'var(--redColor)' }}
+                whileTap={{ rotate: 360, scale: 0.2 }}
               >
                 Home
-              </a>
+              </motion.a>
             </li>
             <li className="nav-item">
-              <a className="nav-link navLinkColor fw-bold fs-4" href="#">
-                Link
-              </a>
+              <motion.a
+                className="nav-link navLinkColor fw-bold fs-4"
+                href="#"
+                whileHover={{ color: 'var(--redColor)' }}
+                whileTap={{ rotate: 360, scale: 0.2 }}
+              >
+                About
+              </motion.a>
             </li>
             <li className="nav-item">
-              <a
+              <motion.a
                 className="nav-link navLinkColor fw-bold fs-4"
                 href="#"
                 tabIndex={-1}
                 aria-disabled="true"
+                whileHover={{ color: 'var(--redColor)' }}
+                whileTap={{ rotate: 360, scale: 0.2 }}
               >
-                Disabled
-              </a>
+                News
+              </motion.a>
             </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link navLinkColor  dropdown-toggle fw-bold fs-4"
+            <li className="nav-item">
+              <motion.a
+                className="nav-link navLinkColor fw-bold fs-4"
                 href="#"
-                id="dropdown04"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                tabIndex={-1}
+                aria-disabled="true"
+                whileHover={{ color: 'var(--redColor)' }}
+                whileTap={{ rotate: 360, scale: 0.2 }}
               >
-                Dropdown
-              </a>
-              <ul
-                className="dropdown-menu bg-dark"
-                aria-labelledby="dropdown04"
-              >
-                <li>
-                  <a className="dropdown-item border border-warning " href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item  border border-warning" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="dropdown-item text-info border border-warning"
-                    href="#"
-                  >
-                    Something else here
-                  </a>
-                </li>
-              </ul>
+                Contact
+              </motion.a>
             </li>
           </ul>
         </div>

@@ -1,5 +1,7 @@
-import logo from '../images/Shiba_Inu_coin_logo.png';
+import { motion } from 'framer-motion';
+import logo from '../images/shibexLogoSmall1.webp';
 import './css_files/socialInfo.css';
+
 const SocialInfo = () => {
   return (
     <div
@@ -21,7 +23,7 @@ const SocialInfo = () => {
       </div>
       <div className="row flex-lg-row-reverse align-items-center shibaHouse">
         <div className="img-wrapper col-12 col-sm-8 col-lg-6">
-          <img src={logo} alt="shiba" className="shiba" />
+          <motion.img src={logo} alt="shiba" className="shiba" />
         </div>
         <div className="col-lg-6">
           <h1
@@ -41,8 +43,13 @@ const SocialInfo = () => {
               type="button"
               className="  btn btn-outline-info rounded-pill socialBtn mt-5"
             >
-              Twitter
-              <i className="ms-3 bi bi-twitter"></i>
+              <a
+                href="https://twitter.com/ShibexSoliders"
+                style={{ textDecoration: 'none' }}
+                className="text-white"
+              >
+                <i className="ms-3 bi bi-twitter">Twitter</i>
+              </a>
             </button>
             <button
               type="button"

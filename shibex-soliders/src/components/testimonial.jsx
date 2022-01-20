@@ -1,15 +1,43 @@
-import firstImage from "../images/avatar/avatar1.png";
-import secondImage from "../images/avatar/avatar2.png";
-import thirdImage from "../images/avatar/avatar3.png";
-import forthImage from "../images/avatar/avatar4.png";
-import "./css_files/testimonial.css";
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import firstImage from '../images/avatar/avatar1.png';
+import secondImage from '../images/avatar/avatar2.png';
+import thirdImage from '../images/avatar/avatar3.png';
+import forthImage from '../images/avatar/avatar4.png';
+import './css_files/testimonial.css';
 const Testimonials = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+
+  const animation = useAnimation();
+
+  useEffect(() => {
+    console.log('use effect hook,inView =', inView);
+
+    if (inView) {
+      //end point of animation
+      animation.start({
+        x: '0',
+        rotate: [0, 360, 0, 360],
+        transition: {
+          duration: 0.6,
+        },
+      });
+    }
+    if (!inView) {
+      //start point of animation
+      animation.start({ x: '-200vw' });
+    }
+  }, [inView, animation]);
+
   return (
     <>
-      {" "}
+      {' '}
       <section
         className="testimonial-section d-flex align-items-center "
-        style={{ position: "relative" }}
+        style={{ position: 'relative' }}
       >
         <div className="custom-shape-divider-top-1642534573">
           <svg
@@ -34,10 +62,13 @@ const Testimonials = () => {
             ></path>
           </svg>
         </div>
-        <div className="container">
-          <h1 className="testi-header text-capitalized headerTitle mt-5">
+        <div className="container" ref={ref}>
+          <motion.h1
+            className="testi-header text-capitalized headerTitle mt-5"
+            animate={animation}
+          >
             The Shibex's
-          </h1>
+          </motion.h1>
           <div className="row align-items-center" data-bs-interval={3000}>
             <div className="col-md-6 testi-img">
               <div className="img-box">

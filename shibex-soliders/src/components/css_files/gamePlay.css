@@ -1,18 +1,35 @@
-.platBtn{
-    width: 20em;
-    height: 5em;
-    /* position: relative; */
-  
+.platBtn {
+  width: 20em;
+  height: 5em;
+  /* position: relative; */
 }
-.platBtn .innerBtn{
-font-size: 2em;
-font-family: var(--gameFont);
-font-weight: bold;
+.gamePlay-container {
+  height: 800px;
+}
+.platBtn .innerBtn {
+  font-size: 2em;
+  font-family: var(--gameFont);
+  font-weight: bold;
 }
 
-.gameplayPara{
-    font-family: var(--gameFont2);
+.gameplayPara {
+  font-family: var(--gameFont2);
 }
-.gameplayHeader{
-    font-family: var(--gameFont);
+.gameplayHeader {
+  font-family: var(--gameFont);
+}
+.video-container {
+  position: relative;
+}
+video {
+  position: relative;
+  top: 10px;
+  left: 150px;
+  object-fit: cover;
+  z-index: 10;
+}
+.play-button {
+  position: relative;
+  top: 500px;
+  right: 435px;
 }
