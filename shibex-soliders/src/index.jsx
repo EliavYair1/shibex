@@ -8,6 +8,7 @@ import 'bootstrap/dist/js/bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { BrowserRouter } from 'react-router-dom';
+
 import AOS from 'aos';
 AOS.init();
 

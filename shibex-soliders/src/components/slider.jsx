@@ -40,6 +40,12 @@ const Slider = () => {
             style={{ height: '100vh', width: '100vw' }}
             alt="sliderImages"
           />
+          <div className="carousel-caption first-caption text-start">
+            <h1 className="captionHeader">Shibex</h1>
+            <p className="display-6 fw-bolder text-capitalize captionPara">
+              more player, more burn, more value
+            </p>
+          </div>
           <motion.div
             className="carousel-caption mb-5"
             initial={{ opacity: '0', scale: 0 }}
@@ -71,7 +77,13 @@ const Slider = () => {
             style={{ height: '100vh', width: '100vw' }}
             alt="godOfWar"
           />
-          <div className="carousel-caption mb-5  ">
+          <div className="carousel-caption second-caption">
+            <h1 className="captionHeader">Shibex</h1>
+            <p className="display-6 fw-bolder text-capitalize captionPara">
+              An econosystem of arcade game based on play to burn modele.
+            </p>
+          </div>
+          <div className="carousel-caption second-caption mb-5  ">
             <a
               href="https://swap.mimo.exchange/#/swap?inputCurrency=0x838403e073a79719a0927a16642ca7dcdc642bd5"
               className="btn-slider btn btn-warning rounded-pill innerBtns btn-lg"
@@ -87,6 +99,12 @@ const Slider = () => {
             style={{ height: '100vh', width: '100vw' }}
             alt="playerimage"
           />
+          <div className="carousel-caption third-caption text-end">
+            <h1 className="captionHeader">Shibex.</h1>
+            <p className="display-6 fw-bolder text-capitalize captionPara">
+              Look out for more upcoming events.
+            </p>
+          </div>
           <div className="carousel-caption mb-5">
             <Link
               to="/"

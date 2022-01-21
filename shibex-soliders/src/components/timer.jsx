@@ -2,6 +2,7 @@ import { motion, useAnimation } from 'framer-motion';
 import './css_files/timer.css';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import ShibexChart from './shibexChart';
 
 const Timer = () => {
   const { ref, inView } = useInView({
@@ -152,6 +153,7 @@ const Timer = () => {
       </div>
       <div className="decoration-wrapper d-none d-md-block">
         <div className="decoration top right scale-4"></div>
+        <ShibexChart />
       </div>
     </section>
   );

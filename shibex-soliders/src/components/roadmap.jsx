@@ -42,7 +42,7 @@ const Roadmap = () => {
       className="sectionRoadmap bg-primary-3 text-light"
       style={{ position: 'relative' }}
     >
-      <div class="custom-shape-divider-bottom-1642543135">
+      <div className="custom-shape-divider-bottom-1642543135">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ const Roadmap = () => {
         >
           <path
             d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
-            class="shape-fill"
+            className="shape-fill"
           ></path>
         </svg>
       </div>
@@ -66,11 +66,9 @@ const Roadmap = () => {
         <div className="row">
           <div className="col-4"></div>
           <div className="col-4 " ref={ref}>
-            <motion.p className="lead text-center" animate={animation}>
-              Shibex is the token that allows you to play all the games
-              developed by the talented Shibex Team, we plan to make one
-              multiplayer arcades game.
-            </motion.p>
+            {/* <motion.p className="lead text-center" animate={animation}>
+              Our Company Goals
+            </motion.p> */}
           </div>
         </div>
 
@@ -85,9 +83,13 @@ const Roadmap = () => {
               >
                 <div className="process-circle bg-primary" />
                 <div>
-                  <span className="text-small text-muted ">Milestone #1</span>
+                  <span className="text-small text-muted ">Q4 2021 </span>
+                  <h5 className="mb-0 milestoneText ">Team Recruitment</h5>
                   <h5 className="mb-0 milestoneText ">
-                    website & 65k$ raised during pre-ICO
+                    Lunch of the SHIBEX Token
+                  </h5>
+                  <h5 className="mb-0 milestoneText ">
+                    Creation of the first game
                   </h5>
                 </div>
               </li>
@@ -99,9 +101,16 @@ const Roadmap = () => {
               >
                 <div className="process-circle bg-primary" />
                 <div>
-                  <span className="text-small text-muted">Milestone #2</span>
+                  <span className="text-small text-muted">Q1 2022 </span>
+                  <h5 className="mb-0 milestoneText">Listing on MimoSwap</h5>
                   <h5 className="mb-0 milestoneText">
-                    ShibexRide lunched & finish the private sale
+                    Crosschain Swap Polygon
+                  </h5>
+                  <h5 className="mb-0 milestoneText">Listing on QuickSwap</h5>
+                  <h5 className="mb-0 milestoneText ">
+                    Partnership with well-known NFT collections
+                    <br />
+                    to integrate them on our “play to burn” games
                   </h5>
                 </div>
               </li>
@@ -113,14 +122,39 @@ const Roadmap = () => {
               >
                 <div className="process-circle bg-primary" />
                 <div>
-                  <span className="text-small text-muted">Milestone #3</span>
+                  <span className="text-small text-muted">Q2 2022 </span>
                   <h5 className="mb-0 milestoneText">
-                    ShibexRide Beta droped connected to Iotex blockchain
+                    Creation of a game ecosystem with the release of a game
+                    every month with NFT partnerships
+                  </h5>
+                  <h5 className="mb-0 milestoneText">
+                    Listing on centralized exchange
                   </h5>
                 </div>
               </li>
               <li
                 data-aos="fade-right"
+                data-aos-easing="ease-in"
+                data-aos-duration="2000"
+                className="aos-init aos-animate ballsItem "
+              >
+                <div className="process-circle bg-primary" />
+                <div>
+                  <span className="text-small text-muted">Q3 2022</span>
+                  <h5 className="mb-0 milestoneText">
+                    Continuation of NFT partnerships
+                  </h5>
+                  <h5 className="mb-0 milestoneText">
+                    Burn a part of the supply with the “play to burn”
+                  </h5>
+                  <h5 className="mb-0 milestoneText">
+                    Extend listing on centralized exchanges
+                  </h5>
+                </div>
+              </li>
+
+              <li
+                data-aos="fade-left"
                 data-aos-easing="ease-in"
                 data-aos-duration="4000"
                 className="aos-init aos-animate ballsItem "
@@ -131,15 +165,24 @@ const Roadmap = () => {
                     className="text-small milestoneHead"
                     style={{ color: '#FCD032' }}
                   >
-                    Ultimate Goal
+                    Q4 2022
                   </span>
-                  <h5 className="mb-0 milestoneUlti  text-center">
-                    {' '}
-                    Shibex tradable on mimoSwap & new game on development
+                  <h5 className="mb-0 milestoneUlti text-start">
+                    Creation of a new token that will allow holders to receive
+                    dividends.
+                  </h5>
+                  <h5 className="mb-0 milestoneUlti  text-start">
+                    This new token could be claim by SHIBEX holders.
+                  </h5>
+                  <h5 className="mb-0 milestoneUlti  text-start">
+                    It will have 8B of supply.
                   </h5>
                 </div>
               </li>
             </ol>
+            <motion.h5 whileInView={{ opacity: 1, transition: { delay: 0.2 } }}>
+              To be continued…
+            </motion.h5>
           </div>
         </div>
       </div>

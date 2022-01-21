@@ -93,7 +93,7 @@ const Footer = () => {
         <div className="row justify-content-center mt-5 mb-5">
           <div className="col-auto" ref={ref}>
             <motion.ul className="nav" animate={animation2}>
-              <li className="nav-item" whileHover={{ color: '#fffff' }}>
+              <motion.li className="nav-item" whileHover={{ color: '#fffff' }}>
                 <a
                   href="https://www.instagram.com/shibexsoldiers/"
                   className="nav-link"
@@ -101,7 +101,7 @@ const Footer = () => {
                 >
                   <i className="bi bi-instagram display-6"></i>
                 </a>
-              </li>
+              </motion.li>
               <li className="nav-item">
                 <a
                   href=" https://twitter.com/ShibexSoldiers"

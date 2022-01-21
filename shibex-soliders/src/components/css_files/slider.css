@@ -31,3 +31,24 @@
   width: 20em !important;
   font-weight: bold !important;
 }
+.first-caption {
+  margin-bottom: 10em;
+  font-family: var(--gameFont2);
+}
+.second-caption {
+  margin-bottom: 10em;
+  font-family: var(--gameFont2);
+}
+.third-caption {
+  margin-bottom: 10em;
+  font-family: var(--gameFont2);
+}
+.first-caption .captionHeader {
+  font-family: var(--gameFont);
+}
+.second-caption .captionHeader {
+  font-family: var(--gameFont);
+}
+.third-caption .captionHeader {
+  font-family: var(--gameFont);
+}
