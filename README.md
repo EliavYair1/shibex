@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Shibex Soliders
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A crypto game Project based on Reactjs with some cool animation by Framer-Motion.
 
 ## Available Scripts
 
