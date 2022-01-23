@@ -63,8 +63,8 @@ const Slider = () => {
             <a
               href="https://shibex-soldiers.web.app/"
               className="btn-slider btn btn-warning rounded-pill innerBtns btn-lg"
-                target="_blank"
-                rel='noreferrer'
+              target="_blank"
+              rel="noreferrer"
             >
               Let's Play
             </a>
@@ -86,8 +86,8 @@ const Slider = () => {
             <a
               href="https://swap.mimo.exchange/#/swap?inputCurrency=0x838403e073a79719a0927a16642ca7dcdc642bd5"
               className="btn-slider btn btn-warning rounded-pill innerBtns btn-lg"
-                target="_blank"
-                rel='noreferrer'
+              target="_blank"
+              rel="noreferrer"
             >
               Buy Shibex
             </a>
@@ -109,8 +109,8 @@ const Slider = () => {
             <Link
               to="/"
               className="btn-slider btn btn-warning rounded-pill innerBtns btn-lg "
-                target="_blank"
-                rel='noreferrer'
+              target="_blank"
+              rel="noreferrer"
             >
               Join Shibex
             </Link>

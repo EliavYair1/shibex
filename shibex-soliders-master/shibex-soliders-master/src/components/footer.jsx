@@ -3,7 +3,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import './css_files/footer.css';
-import pdf from '../whitePaperShibex/up_white_paper.pdf'
+import pdf from '../whitePaperShibex/up_white_paper.pdf';
 
 const Footer = () => {
   const { ref, inView } = useInView({
@@ -70,38 +70,38 @@ const Footer = () => {
               animate={animation}
             >
               <li className="nav-item">
-                <a href="https://shibex-soldiers.web.app/"
-                className="nav-link"
-                target="_blank"
-                rel='noreferrer'
-                 >
+                <a
+                  href="https://shibex-soldiers.web.app/"
+                  className="nav-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Play
                 </a>
               </li>
               <li className="nav-item">
-                <a href="https://swap.mimo.exchange/#/swap?inputCurrency=0x838403e073a79719a0927a16642ca7dcdc642bd5" className="nav-link"
-                target="_blank"
-                rel='noreferrer'
+                <a
+                  href="https://swap.mimo.exchange/#/swap?inputCurrency=0x838403e073a79719a0927a16642ca7dcdc642bd5"
+                  className="nav-link"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Buy
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" 
-                className="nav-link"
-                target="_blank"
-                rel='noreferrer'
+                <a
+                  href="#"
+                  className="nav-link"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   News
                 </a>
               </li>
               <li className="nav-item">
-                <a href={pdf}
-                className="nav-link"
-                 download
-                  >
-                white paper
-
+                <a href={pdf} className="nav-link" download>
+                  white paper
                 </a>
               </li>
             </motion.ul>
@@ -115,7 +115,7 @@ const Footer = () => {
                   href="https://www.instagram.com/shibexsoldiers/"
                   className="nav-link"
                   target="_blank"
-                  rel='noreferrer'
+                  rel="noreferrer"
                 >
                   <i className="bi bi-instagram display-6"></i>
                 </a>
@@ -125,8 +125,7 @@ const Footer = () => {
                   href=" https://twitter.com/ShibexSoldiers"
                   className="nav-link"
                   target="_blank"
-                  rel='noreferrer'
-
+                  rel="noreferrer"
                 >
                   <i className="bi bi-twitter display-6"></i>
                 </a>
@@ -136,8 +135,7 @@ const Footer = () => {
                   href="https://swap.mimo.exchange/#/swap?inputCurrency=0x838403e073a79719a0927a16642ca7dcdc642bd5"
                   className="nav-link"
                   target="_blank"
-                                    rel='noreferrer'
-
+                  rel="noreferrer"
                 >
                   <i className="bi bi-coin display-6"></i>
                 </a>
@@ -147,8 +145,7 @@ const Footer = () => {
                   href="https://t.me/ShibexToken"
                   className="nav-link"
                   target="_blank"
-                                    rel='noreferrer'
-
+                  rel="noreferrer"
                 >
                   <i className="bi bi-telegram display-6"></i>
                 </a>
