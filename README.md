@@ -23,10 +23,13 @@ we wanted to give the users a Playful atmosphere .
 me personlly (Eliav) really enojyed working with the Shibex
 team and on their life project so hope you guys have a fun experience.
 
-
 # Run commands (in terminal):
 
-• Cd {project directory} npm I {install node modules for each folder}
+• Cd {project directory} .
+
+### `npm i`
+install node modules for each folder.
+
 
 ### `npm start`
 
