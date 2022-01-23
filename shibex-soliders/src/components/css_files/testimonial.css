@@ -41,6 +41,11 @@
   font-family: var(--gameFont);
   font-weight: bolder;
 }
+@media (max-width: 350px) {
+  .testi-header {
+    font-size: 3em;
+  }
+}
 @media (max-width: 575px) {
   .testi-header {
     margin-bottom: 1.8em;
@@ -116,7 +121,7 @@
 .custom-shape-divider-top-1642534573 svg {
   position: relative;
   display: block;
-  width: calc(110% + 1.3px);
+  /* width: calc(110% + 1.3px); */
   height: 164px;
 }
 
@@ -124,7 +129,7 @@
   fill: #369fe3;
 }
 
-/** For mobile devices **/
+/* For mobile devices */
 @media (max-width: 767px) {
   .custom-shape-divider-top-1642534573 svg {
     width: calc(110% + 1.3px);

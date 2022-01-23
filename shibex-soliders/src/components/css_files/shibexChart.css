@@ -1,4 +1,7 @@
 .chartWrapper .chart {
   position: relative;
-  left: 10em;
+  left: 150px;
+}
+.chart {
+  width: 10em !important;
 }

@@ -16,8 +16,8 @@ class ShibexChart extends Component {
     return (
       <>
         <div className="row">
-          <div className="col-3"></div>
-          <motion.div className="chartWrapper col-6">
+          <div className="col-xl-4 col-sm-4 col-xs-4 col-md-4"></div>
+          <motion.div className="chartWrapper col-xl-4 col-sm-4 col-md-4 col-xs-4 ">
             <div
               className="nomics-ticker-widget chart"
               data-name="Shibex"
@@ -25,6 +25,7 @@ class ShibexChart extends Component {
               data-quote="USD"
             ></div>
           </motion.div>
+          <div className="col-xl-2 col-sm-4 col-md-4 col-xs-4"></div>
         </div>
       </>
     );

@@ -33,15 +33,18 @@
 }
 .first-caption {
   margin-bottom: 10em;
-  font-family: var(--gameFont2);
+  font-family: var(--gameFont);
+  text-shadow: 0 0 15px #fcd032, 0 0 10px #fcd032;
 }
 .second-caption {
   margin-bottom: 10em;
-  font-family: var(--gameFont2);
+  font-family: var(--gameFont);
+  text-shadow: 0 0 15px #fcd032, 0 0 10px #fcd032;
 }
 .third-caption {
   margin-bottom: 10em;
-  font-family: var(--gameFont2);
+  font-family: var(--gameFont);
+  text-shadow: 0 0 15px #fcd032, 0 0 10px #fcd032;
 }
 .first-caption .captionHeader {
   font-family: var(--gameFont);
@@ -51,4 +54,14 @@
 }
 .third-caption .captionHeader {
   font-family: var(--gameFont);
+}
+
+@media screen and (max-width: 770px) {
+  .captionPara {
+    font-size: 2em !important;
+  }
+  .innerBtns {
+    width: 10em !important;
+    font-size: 1.5em;
+  }
 }

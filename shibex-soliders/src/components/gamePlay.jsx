@@ -59,8 +59,8 @@ const GamePlay = () => {
           </div>
         </div>
         <div className="row ">
-          <div className="col-8 text-center video-container ">
-            <video width="1000" height="400" controls src={shivaVideo}></video>
+          <div className="col-12 col-sm-4  video-container ">
+            <video className="video" controls src={shivaVideo}></video>
           </div>
         </div>
         <div className="row">

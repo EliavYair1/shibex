@@ -41,7 +41,6 @@ const Slider = () => {
             alt="sliderImages"
           />
           <div className="carousel-caption first-caption text-start">
-            <h1 className="captionHeader">Shibex</h1>
             <p className="display-6 fw-bolder text-capitalize captionPara">
               more player, more burn, more value
             </p>
@@ -78,7 +77,6 @@ const Slider = () => {
             alt="godOfWar"
           />
           <div className="carousel-caption second-caption">
-            <h1 className="captionHeader">Shibex</h1>
             <p className="display-6 fw-bolder text-capitalize captionPara">
               An econosystem of arcade game based on play to burn modele.
             </p>
@@ -100,7 +98,6 @@ const Slider = () => {
             alt="playerimage"
           />
           <div className="carousel-caption third-caption text-end">
-            <h1 className="captionHeader">Shibex.</h1>
             <p className="display-6 fw-bolder text-capitalize captionPara">
               Look out for more upcoming events.
             </p>

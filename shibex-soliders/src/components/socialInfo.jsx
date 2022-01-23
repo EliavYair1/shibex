@@ -106,7 +106,7 @@ const SocialInfo = () => {
           </span>
           <span className="para" ref={ref}>
             <motion.p
-              className="lead text-light text-center m-4 lh-lg paragraph1"
+              className="lead text-light text-center m-4 lh-lg paragraph1 lh-md"
               animate={animation2}
             >
               Our community grows stronger every day. Please follow our social
@@ -128,7 +128,8 @@ const SocialInfo = () => {
                   className="text-white"
                   target="_blank"
                 >
-                  <i className="ms-3 bi bi-twitter">Twitter</i>
+                  Twitter
+                  <i className="ms-3 bi bi-twitter twitt-icon"></i>
                 </a>
               </motion.button>
             </div>
@@ -145,7 +146,7 @@ const SocialInfo = () => {
                   target="_blank"
                 >
                   Telegram
-                  <i className="ms-2 bi bi-telegram"></i>
+                  <i className="ms-2 bi bi-telegram tele-icon"></i>
                 </a>
               </motion.button>
             </div>

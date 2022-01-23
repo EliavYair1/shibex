@@ -48,33 +48,28 @@ const Timer = () => {
               A Decentralized GameFi Token that Evolved into the amazing IoTex
               Ecosystem !
             </h1>
-            <p className="lead timerPara ms-3 mt-5">
+            <p className=" timerPara ms-3 mt-5">
               We are always on the move and we are constantly innovating for
               you: referencing, partnerships and above all... new games. Here's
               what to expect: keep an eye on the countdown
             </p>
             <div className="d-flex mb-5">
-              <span className="badge badge-primary mr-2">News</span>
-              <a href="#" className="text-small hover-arrow">
+              <span className="badge badge-primary ">News</span>
+              <a href="#" className="text-small hover-arrow newsLink">
                 Stay Updated with company
               </a>
             </div>
           </motion.div>
           <div className="col-xl-6 col-md-6 mt-5">
-            <motion.div
-              className="timer"
-              // initial={{ x: '200vw' }}
-              animate={animation}
-              // transition={{ duration: 0.8, type: 'spring' }}
-            >
+            <motion.div className="timer" animate={animation}>
               <div className="text-center text-light">
                 <div className="mb-4">
-                  <h1 className="timerHeader">
+                  <h1 className="comingHeader">
                     Shibex will be tradable on MimoSwap in
                   </h1>
                 </div>
                 <div>
-                  <span className="text-small text-dark fw-bolder fs-3 timerHeader">
+                  <span className="text-small text-dark fw-bolder fs-3 ms-5 comingHeader">
                     Coming Soon!
                   </span>
                 </div>
@@ -82,14 +77,13 @@ const Timer = () => {
               <div className="card card-body mt-4 shadow-lg timerBox  ">
                 <div className="row">
                   <div
-                    className="col-12 mb-4 add-countdown-time"
-                    data-countdown-date="2022/01/31"
+                    className="col-12 mb-4 add-countdown-time "
                     data-detailed
                   >
                     <div data-active className="row text-center">
                       <div className="col">
                         <h2
-                          className=" text-warning mb-2 timerDigits"
+                          className=" text-warning mb-2 timerDigits "
                           data-days
                           data-format="%D"
                         >
@@ -142,7 +136,7 @@ const Timer = () => {
                 </div>
                 <a
                   href="https://swap.mimo.exchange/#/swap?inputCurrency=0x838403e073a79719a0927a16642ca7dcdc642bd5"
-                  className="btn btn-warning rounded-pill purchaseBtn fw-bold mt-4 timerPara"
+                  className="btn btn-warning rounded-pill purchaseBtn fw-bold mt-4 "
                 >
                   Buy Shibex
                 </a>
@@ -153,6 +147,8 @@ const Timer = () => {
       </div>
       <div className="decoration-wrapper d-none d-md-block">
         <div className="decoration top right scale-4"></div>
+        <br />
+        <br />
         <ShibexChart />
       </div>
     </section>

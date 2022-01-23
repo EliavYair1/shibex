@@ -6,7 +6,7 @@
   background-color: #fcd032;
 }
 .nav-item .navLinkColor {
-  color: rgb(12, 188, 167);
+  color: var(--blueColor);
   font-family: var(--gameFont);
   display: flex;
   /* justify-content: space-around; */
