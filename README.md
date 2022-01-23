@@ -18,7 +18,7 @@ to drive value to the Shibex token !
 This is a SPA project was made in React JS and with
 Framer-Motion && Bootstrap 5 frameworks.
 
-we wanted to give the users the Playful atmosphere .
+we wanted to give the users a Playful atmosphere .
 
 me personlly (Eliav) really enojyed working with the Shibex
 team and on their life project so hope you guys have a fun experience.
