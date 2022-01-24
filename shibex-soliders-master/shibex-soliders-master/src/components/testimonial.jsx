@@ -164,26 +164,6 @@ const Testimonials = () => {
                       me what you think!
                     </span>
                   </div>
-                  {/* <div className="btns">
-                    <button
-                      className="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#myCarousel"
-                      data-bs-slide="prev"
-                    >
-                      <i className="bi bi-arrow-left-circle text-secondary"></i>
-                      <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                      className="carousel-control-next"
-                      type="button"
-                      data-bs-target="#myCarousel"
-                      data-bs-slide="next"
-                    >
-                      <i className="bi bi-arrow-right-circle text-secondary"></i>
-                      <span className="visually-hidden">Next</span>
-                    </button>
-                  </div> */}
                 </div>
               </div>
             </div>

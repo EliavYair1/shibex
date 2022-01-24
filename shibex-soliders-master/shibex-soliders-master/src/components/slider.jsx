@@ -1,6 +1,9 @@
-import slider1 from '../images/shibexLogo/shibexLogo/desktop/desktop3.png';
-import slider2 from '../images/shibexLogo/shibexLogo/desktop/desktop2.png';
-import slider3 from '../images/shibexLogo/shibexLogo/desktop/desktop.png';
+import desktop1 from '../images/shibexLogo/shibexLogo/desktop/desktop3.png';
+import desktop2 from '../images/shibexLogo/shibexLogo/desktop/desktop2.png';
+import desktop3 from '../images/shibexLogo/shibexLogo/desktop/desktop.png';
+import mobile1 from '../images/shibexLogo/shibexLogo/mobile/mobile1.png';
+import mobile2 from '../images/shibexLogo/shibexLogo/mobile/mobile2.png';
+import mobile3 from '../images/shibexLogo/shibexLogo/mobile/mobile3.png';
 import './css_files/slider.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -34,10 +37,16 @@ const Slider = () => {
       <div className="carousel-inner ">
         <div className="carousel-item active">
           <img
-            src={slider1}
-            className="d-block "
+            src={desktop1}
+            className=" desktopImg"
             style={{ height: '100vh', width: '100%' }}
             alt="sliderImages"
+          />
+          <img
+            src={mobile1}
+            alt="sliderMobile"
+            className="mobileImg"
+            style={{ height: '100vh', width: '100%' }}
           />
           <div className="carousel-caption first-caption text-start">
             <p className="display-6 fw-bolder text-capitalize captionPara">
@@ -72,10 +81,16 @@ const Slider = () => {
         </div>
         <div className="carousel-item ">
           <img
-            src={slider2}
-            className="d-block "
+            src={desktop2}
+            className=" desktopImg"
             style={{ height: '100vh', width: '100%' }}
             alt="godOfWar"
+          />
+          <img
+            src={mobile2}
+            alt="sliderMobile"
+            className=" mobileImg"
+            style={{ height: '100vh', width: '100%' }}
           />
           <div className="carousel-caption second-caption">
             <p className="display-6 fw-bolder text-capitalize captionPara">
@@ -95,10 +110,16 @@ const Slider = () => {
         </div>
         <div className="carousel-item">
           <img
-            src={slider3}
-            className="d-block "
+            src={desktop3}
+            className=" desktopImg"
             style={{ height: '100vh', width: '100%' }}
             alt="playerimage"
+          />
+          <img
+            src={mobile3}
+            alt="sliderMobile"
+            className="mobileImg"
+            style={{ height: '100vh', width: '100%' }}
           />
           <div className="carousel-caption third-caption text-end">
             <p className="display-6 fw-bolder text-capitalize captionPara">

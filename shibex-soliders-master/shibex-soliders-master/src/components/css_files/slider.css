@@ -55,13 +55,31 @@
 .third-caption .captionHeader {
   font-family: var(--gameFont);
 }
-
+.mobileImg {
+  display: none;
+}
+.desktopImg {
+  display: block;
+}
 @media screen and (max-width: 770px) {
   .captionPara {
     font-size: 2em !important;
   }
+
   .innerBtns {
     width: 10em !important;
     font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 573px) {
+  .mobileImg {
+    display: block;
+  }
+  .desktopImg {
+    display: none;
+  }
+  .captionPara {
+    font-size: 1em !important;
+    margin-top: 1em;
   }
 }
