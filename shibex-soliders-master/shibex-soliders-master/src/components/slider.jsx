@@ -1,6 +1,6 @@
-import slider1 from '../images/shibexBlue.jpg';
-import slider2 from '../images/shibexPurple.jpg';
-import slider3 from '../images/shibexGreen.png';
+import slider1 from '../images/shibexLogo/shibexLogo/desktop/desktop3.png';
+import slider2 from '../images/shibexLogo/shibexLogo/desktop/desktop2.png';
+import slider3 from '../images/shibexLogo/shibexLogo/desktop/desktop.png';
 import './css_files/slider.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -36,7 +36,7 @@ const Slider = () => {
           <img
             src={slider1}
             className="d-block "
-            style={{ height: '100vh', width: '100vw' }}
+            style={{ height: '100vh', width: '100%' }}
             alt="sliderImages"
           />
           <div className="carousel-caption first-caption text-start">
@@ -74,7 +74,7 @@ const Slider = () => {
           <img
             src={slider2}
             className="d-block "
-            style={{ height: '100vh', width: '100vw' }}
+            style={{ height: '100vh', width: '100%' }}
             alt="godOfWar"
           />
           <div className="carousel-caption second-caption">
@@ -97,7 +97,7 @@ const Slider = () => {
           <img
             src={slider3}
             className="d-block "
-            style={{ height: '100vh', width: '100vw' }}
+            style={{ height: '100vh', width: '100%' }}
             alt="playerimage"
           />
           <div className="carousel-caption third-caption text-end">
