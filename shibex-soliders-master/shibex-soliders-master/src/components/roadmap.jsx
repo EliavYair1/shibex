@@ -81,7 +81,7 @@ const Roadmap = () => {
                 data-aos-easing="ease-in"
                 className="aos-init aos-animate ballsItem "
               >
-                <div className="process-circle bg-primary" />
+                <div className="process-circle bg-primary roadmapA" />
                 <div>
                   <span className="text-small text-muted ">Q4 2021 </span>
                   <h5 className="mb-0 milestoneText ">Team Recruitment</h5>

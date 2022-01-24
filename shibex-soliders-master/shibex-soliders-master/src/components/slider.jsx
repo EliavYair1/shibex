@@ -1,9 +1,9 @@
 import desktop1 from '../images/shibexLogo/shibexLogo/desktop/desktop3.png';
 import desktop2 from '../images/shibexLogo/shibexLogo/desktop/desktop2.png';
 import desktop3 from '../images/shibexLogo/shibexLogo/desktop/desktop.png';
-import mobile1 from '../images/shibexLogo/shibexLogo/mobile/mobile1.png';
-import mobile2 from '../images/shibexLogo/shibexLogo/mobile/mobile2.png';
-import mobile3 from '../images/shibexLogo/shibexLogo/mobile/mobile3.png';
+import mobile1 from '../images/shibexGreen.png';
+import mobile2 from '../images/shibexPurple.jpg';
+import mobile3 from '../images/shibexLogo/shibexLogo/desktop/desktop3.png';
 import './css_files/slider.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -22,7 +22,7 @@ const Slider = () => {
       initial="hidden"
       animate="visible"
       transition={{ duration: 3 }}
-      className="carousel slide   sliderShadow  "
+      className="carousel slide   sliderShadow  sliderContainer"
       data-bs-ride="carousel"
     >
       <ol className="carousel-indicators">
@@ -49,7 +49,10 @@ const Slider = () => {
             style={{ height: '100vh', width: '100%' }}
           />
           <div className="carousel-caption first-caption text-start">
-            <p className="display-6 fw-bolder text-capitalize captionPara">
+            <p
+              className="display-6 fw-bolder text-capitalize captionPara"
+              style={{ marginTop: '20px' }}
+            >
               more player, more burn, more value
             </p>
           </div>
@@ -93,7 +96,10 @@ const Slider = () => {
             style={{ height: '100vh', width: '100%' }}
           />
           <div className="carousel-caption second-caption">
-            <p className="display-6 fw-bolder text-capitalize captionPara">
+            <p
+              className="display-6 fw-bolder text-capitalize captionPara "
+              style={{ marginTop: '20px' }}
+            >
               An econosystem of arcade game based on play to burn modele.
             </p>
           </div>
@@ -122,7 +128,10 @@ const Slider = () => {
             style={{ height: '100vh', width: '100%' }}
           />
           <div className="carousel-caption third-caption text-end">
-            <p className="display-6 fw-bolder text-capitalize captionPara">
+            <p
+              className="display-6 fw-bolder text-capitalize captionPara"
+              style={{ marginTop: '20px' }}
+            >
               Look out for more upcoming events.
             </p>
           </div>

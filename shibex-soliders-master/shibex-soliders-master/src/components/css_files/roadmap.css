@@ -1074,9 +1074,12 @@ user agent stylesheet ol {
   box-shadow: 0 0 10px #ffff, 0 0 20px #ffff, 0 0 40px #ffff, 0 0 80px #ffff;
 }
 .process-ultimate:empty.bg-primary {
-  box-shadow: 0 0 10px #fcd032, 0 0 20px #fcd032, 0 0 40px #fcd032,
-    0 0 80px #fcd032;
+  box-shadow: 0 0 10px #ffff, 0 0 20px #ffff, 0 0 40px #ffff, 0 0 80px #ffff;
 }
+/* .process-circle:empty.bg-primary .roadmapA {
+  box-shadow: 0 0 10px rgb(109, 109, 109), 0 0 20px rgb(109, 109, 109),
+    0 0 40px rgb(109, 109, 109), 0 0 80px rgb(109, 109, 109) !important;
+} */
 @media (min-width: 768px) {
   .process-vertical li .process-circle {
     margin-left: -1.5rem;

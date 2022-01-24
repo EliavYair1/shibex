@@ -63,7 +63,7 @@
 }
 @media screen and (max-width: 770px) {
   .captionPara {
-    font-size: 2em !important;
+    font-size: 1.2em !important;
   }
 
   .innerBtns {
@@ -74,6 +74,8 @@
 @media screen and (max-width: 573px) {
   .mobileImg {
     display: block;
+    height: 100vh !important;
+    width: 100%;
   }
   .desktopImg {
     display: none;
