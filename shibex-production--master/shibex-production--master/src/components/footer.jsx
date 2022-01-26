@@ -13,7 +13,6 @@ const Footer = () => {
   const animation = useAnimation();
 
   useEffect(() => {
-
     if (inView) {
       animation.start({ opacity: 1, transition: { delay: 0.1 } });
     }
@@ -25,7 +24,6 @@ const Footer = () => {
   const animation2 = useAnimation();
 
   useEffect(() => {
-
     if (inView) {
       animation2.start({ y: '0' });
     }
@@ -54,7 +52,7 @@ const Footer = () => {
       <div className="container">
         <div className="row mb-4 justify-content-center">
           <div className="col-auto">
-            <p className="text-center fs-4" ref={ref}>
+            <p className="text-center fs-6 mt-3" ref={ref}>
               <motion.span className="color_11" animate={animation}>
                 ShibexSoldiers are you ready? 🚀
               </motion.span>
@@ -156,11 +154,13 @@ const Footer = () => {
             <motion.small className="text-muted">
               ©2020 All Rights Reserved. Shibex® is a registered trademark of
               Your Company. Apple and the Apple logo are trademarks of Apple
-              Inc., registered in the U.S. and other countries. Mac App Store is
-              a service mark of Apple Inc. Google Play and the Google Play logo
+              Inc.registered in the U.S. and other countries. Mac App Store is a
+              service mark of Apple Inc. Google Play and the Google Play logo
               are trademarks of Google Inc. <br /> <br />
-              <span className='copyRights'>© This Site Was Designed And Developed By -  Eliav Yair & Ofek Abarbanel & Sagi Reuven </span>
-              
+              <span className="copyRights">
+                © This Site Was Designed And Developed By - Eliav Yair & Ofek
+                Abarbanel & Sagi Reuven{' '}
+              </span>
             </motion.small>
           </div>
         </div>

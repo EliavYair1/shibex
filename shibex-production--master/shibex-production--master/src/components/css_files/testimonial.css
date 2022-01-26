@@ -79,6 +79,26 @@
   font-family: var(--gameFont2);
 }
 
+.custom-shape-divider-top-desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-desktop svg {
+  position: relative;
+  display: block;
+  width: calc(110% + 1.3px);
+  height: 164px;
+}
+
+.custom-shape-divider-top-desktop .shape-fill {
+  fill: #369fe3;
+}
+
 @media (max-width: 991px) {
   .testi-img .img-box {
     max-width: 300px;
@@ -109,31 +129,33 @@
   .btns {
     margin-top: 35%;
   }
-}
-.custom-shape-divider-top-1642534573 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1642534573 svg {
-  position: relative;
-  display: block;
-  width: calc(110% + 1.3px);
-  height: 164px;
-}
-
-.custom-shape-divider-top-1642534573 .shape-fill {
-  fill: #369fe3;
-}
-
-/* For mobile devices */
-@media (max-width: 767px) {
-  .custom-shape-divider-top-1642534573 svg {
+  .custom-shape-divider-top-desktop svg {
     width: calc(110% + 1.3px);
     height: 113px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-mobile svg {
+    position: relative;
+    display: block;
+    width: calc(113% + 1.3px);
+    height: 78px;
+  }
+  .custom-shape-divider-top-desktop {
+    display: none;
+  }
+  .custom-shape-divider-top-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-top-mobile .shape-fill {
+    fill: #369fe3;
   }
 }

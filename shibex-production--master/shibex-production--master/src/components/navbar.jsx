@@ -40,7 +40,7 @@ const Navbar = () => {
                 aria-current="page"
                 href="https://shibex-soldiers.web.app/"
                 whileHover={{ color: 'var(--redColor)' }}
-                whileTap={{ rotate: 360, scale: 0.2 }}
+                whileTap={{ scale: 0.5, originX: 0 }}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -52,7 +52,7 @@ const Navbar = () => {
                 className="nav-link navLinkColor fw-bold fs-4"
                 href="https://swap.mimo.exchange/#/swap?inputCurrency=0x838403e073a79719a0927a16642ca7dcdc642bd5"
                 whileHover={{ color: 'var(--redColor)' }}
-                whileTap={{ rotate: 360, scale: 0.2 }}
+                whileTap={{ scale: 0.5, originX: 0 }}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -62,7 +62,7 @@ const Navbar = () => {
             <li className="nav-item">
               <motion.a
                 whileHover={{ color: 'var(--redColor)' }}
-                whileTap={{ rotate: 360, scale: 0.2 }}
+                whileTap={{ scale: 0.5, originX: 0 }}
                 className="nav-link  navLinkColor fw-bold fs-4"
                 target="_blank"
                 rel="noreferrer"
@@ -79,7 +79,7 @@ const Navbar = () => {
                 tabIndex={-1}
                 aria-disabled="true"
                 whileHover={{ color: 'var(--redColor)' }}
-                whileTap={{ rotate: 360, scale: 0.2 }}
+                whileTap={{ scale: 0.5, originX: 0 }}
                 target="_blank"
                 rel="noreferrer"
               >

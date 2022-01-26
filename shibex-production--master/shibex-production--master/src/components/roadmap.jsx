@@ -1,7 +1,7 @@
-import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import "./css_files/roadmap.css";
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import './css_files/roadmap.css';
 
 const Roadmap = () => {
   const { ref, inView } = useInView({
@@ -36,7 +36,7 @@ const Roadmap = () => {
   return (
     <section
       className="sectionRoadmap bg-primary-3 text-light"
-      style={{ position: "relative" }}
+      style={{ position: 'relative' }}
     >
       <div className="custom-shape-divider-bottom-1642543135">
         <svg
@@ -61,26 +61,23 @@ const Roadmap = () => {
         </div>
         <div className="row">
           <div className="col-4"></div>
-          <div className="col-4 " ref={ref}>
-            {/* <motion.p className="lead text-center" animate={animation}>
-              Our Company Goals
-            </motion.p> */}
-          </div>
+          <div className="col-4 " ref={ref}></div>
         </div>
 
-        <div className="row o-hidden o-lg-visible">
+        <div className="row o-hidden o-lg-visible roadmap-items">
           <div className="col d-flex flex-column align-items-center">
             <ol className="process-vertical mt-5 mb-5">
               <li
                 data-aos="fade-left"
-                data-aos-duration="1000"
                 data-aos-easing="ease-in"
                 className="aos-init aos-animate ballsItem firstC"
               >
                 <div className="process-circle bg-primary roadmapA  " />
                 <div>
                   <span className="text-small text-muted ">Q4 2021 </span>
-                  <h5 className="mb-0 milestoneText text-white q2021">Team Recruitment</h5>
+                  <h5 className="mb-0 milestoneText text-white q2021">
+                    Team Recruitment
+                  </h5>
                   <h5 className="mb-0 milestoneText text-white q2021">
                     Lunch of the SHIBEX Token
                   </h5>
@@ -92,17 +89,20 @@ const Roadmap = () => {
               <li
                 data-aos="fade-right"
                 data-aos-easing="ease-in"
-                data-aos-duration="2000"
                 className="aos-init aos-animate ballsItem "
               >
                 <div className="process-circle bg-primary" />
                 <div>
                   <span className="text-small text-muted">Q1 2022 </span>
-                  <h5 className="mb-0 milestoneText text-white">Listing on MimoSwap</h5>
+                  <h5 className="mb-0 milestoneText text-white">
+                    Listing on MimoSwap
+                  </h5>
                   <h5 className="mb-0 milestoneText text-white">
                     Crosschain Swap Polygon
                   </h5>
-                  <h5 className="mb-0 milestoneText text-white">Listing on QuickSwap</h5>
+                  <h5 className="mb-0 milestoneText text-white">
+                    Listing on QuickSwap
+                  </h5>
                   <h5 className="mb-0 milestoneText text-white ">
                     Partnership with well-known NFT collections
                     <br />
@@ -112,7 +112,6 @@ const Roadmap = () => {
               </li>
               <li
                 data-aos="fade-left"
-                data-aos-duration="3000"
                 data-aos-easing="ease-in"
                 className="aos-init aos-animate ballsItem "
               >
@@ -131,7 +130,6 @@ const Roadmap = () => {
               <li
                 data-aos="fade-right"
                 data-aos-easing="ease-in"
-                data-aos-duration="2000"
                 className="aos-init aos-animate ballsItem "
               >
                 <div className="process-circle bg-primary" />
@@ -152,7 +150,6 @@ const Roadmap = () => {
               <li
                 data-aos="fade-left"
                 data-aos-easing="ease-in"
-                data-aos-duration="4000"
                 className="aos-init aos-animate ballsItem "
               >
                 <div className="process-circle process-ultimate bg-primary" />
@@ -173,9 +170,7 @@ const Roadmap = () => {
                 </div>
               </li>
             </ol>
-            <motion.h5 whileInView={{ opacity: 1, transition: { delay: 0.2 } }}>
-              To be continued…
-            </motion.h5>
+            <h5>To be continued…</h5>
           </div>
         </div>
       </div>

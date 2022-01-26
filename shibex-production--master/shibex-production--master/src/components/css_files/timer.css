@@ -11,7 +11,6 @@ section {
   position: relative;
 }
 
-
 .purchaseBtn {
   background-color: #fcd032 !important;
 }
@@ -41,6 +40,8 @@ section {
   height: 14em;
   margin-left: 4em;
 }
+.container-fluid {
+}
 @media screen and (max-width: 770px) and (min-width: 577px) {
   .timerBox {
     width: 25em;
@@ -53,16 +54,13 @@ section {
     left: 30px;
   }
 
-
-
   .timerHeader {
     font-size: 1.3em;
     width: 60%;
   }
   .comingHeader {
     font-size: 1.2em;
-        margin-left: 2em;
-
+    margin-left: 2em;
   }
   .badge,
   .newsLink {
@@ -72,18 +70,18 @@ section {
 @media screen and (max-width: 576px) and (min-width: 350px) {
   .timerBox {
     width: 20em;
-    margin:0 auto;
+    margin: 0 auto;
   }
   .timerClock {
     font-size: 0.4em;
   }
   .comingHeader {
     font-size: 1em;
-   margin-left:1em ;
+    margin-left: 1em;
   }
-  .coming-soon{
-margin-right:   1.5em!important;
-}
+  .coming-soon {
+    margin-right: 1.5em !important;
+  }
 }
 @media screen and (max-width: 992px) and (min-width: 771px) {
   .timerClock {
@@ -95,11 +93,11 @@ margin-right:   1.5em!important;
     position: relative;
     left: 30px;
   }
-    
-.coming-soon{
-margin-right: -12em!important;
-font-size: 0.5em!important;
-}
+
+  .coming-soon {
+    margin-right: -12em !important;
+    font-size: 0.5em !important;
+  }
   .comingHeader {
     font-size: 1.8em;
     margin-right: -9em;
@@ -126,8 +124,9 @@ font-size: 0.5em!important;
     left: 30px;
   }
   .comingHeader {
-    font-size:1.5em;
-margin-right:-10em  }
+    font-size: 1.5em;
+    margin-right: -10em;
+  }
   .timerBox {
     width: 35em;
     margin-left: 8em;
