@@ -12,32 +12,32 @@ const GamePlay = () => {
   const animation = useAnimation();
 
   useEffect(() => {
-
     if (inView) {
       //end point of animation
       animation.start({
-        y: '0',opacity:1
+        y: '0',
+        opacity: 1,
       });
     }
     if (!inView) {
       //start point of animation
-      animation.start({ y: '-200px',opacity:0 });
+      animation.start({ y: '-200px', opacity: 0 });
     }
   }, [inView, animation]);
 
   const animation2 = useAnimation();
 
   useEffect(() => {
-
     if (inView) {
       //end point of animation2
       animation2.start({
-        y: '30px',opacity:1
+        y: '30px',
+        opacity: 1,
       });
     }
     if (!inView) {
       //start point of animation2
-      animation2.start({ y: '200px',opacity:0});
+      animation2.start({ y: '200px', opacity: 0 });
     }
   }, [inView, animation2]);
 
@@ -56,10 +56,18 @@ const GamePlay = () => {
             </div>
           </div>
         </div>
-        <br /><br />
+        <br />
+        <br />
         <div className="row ">
           <div className="col-12 col-sm-4  video-container ">
-            <video className="video" controls src={shivaVideo}></video>
+            <iframe
+              className="video"
+              src="https://www.youtube.com/embed/mNea_RSx0CM"
+              title="Shibex Ride GamePlay"
+              // frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
         <div className="row">
