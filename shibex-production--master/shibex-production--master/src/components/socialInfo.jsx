@@ -5,26 +5,24 @@ import logo from '../images/shibexLogoSmall1.webp';
 import './css_files/socialInfo.css';
 
 const SocialInfo = () => {
-/*   const constraintsRef = useRef(null);
- */  const { ref, inView } = useInView({
+  /*   const constraintsRef = useRef(null);
+   */ const { ref, inView } = useInView({
     threshold: 0.8,
   });
   const animation = useAnimation();
   useEffect(() => {
-
     if (inView) {
       //end point of animation
-      animation.start({ y: '0' ,opacity:1});
+      animation.start({ y: '0', opacity: 1 });
     }
     if (!inView) {
       //start point of animation
-      animation.start({ y: '-20vh',opacity:0 });
+      animation.start({ y: '-20vh', opacity: 0 });
     }
   }, [inView, animation]);
 
   const animation2 = useAnimation();
   useEffect(() => {
-
     if (inView) {
       //end point of animation2
       animation2.start({ x: '0' });
@@ -37,7 +35,6 @@ const SocialInfo = () => {
 
   const animation3 = useAnimation();
   useEffect(() => {
-
     if (inView) {
       //end point of animation3
       animation3.start({ rotate: 0 });
@@ -50,7 +47,6 @@ const SocialInfo = () => {
 
   const animation4 = useAnimation();
   useEffect(() => {
-
     if (inView) {
       //end point of animation4
       animation4.start({ rotate: 0 });
@@ -97,7 +93,7 @@ const SocialInfo = () => {
               style={{ color: '#fcd032' }}
               animate={animation}
             >
-              Shibex Soliders
+              Shibex Soldiers
             </motion.h1>
           </span>
           <span className="para" ref={ref}>
@@ -108,7 +104,7 @@ const SocialInfo = () => {
               Our community grows stronger every day. Please follow our social
               platforms to get the most up-to-date, accurate SHIBX information.
               Using the links below, you can join our groups alongside the
-              members of the ShibexSoldiers.
+              members of the ShibexSoldiers community.
             </motion.p>
           </span>
           <div className="btn-wrapper me-5 text-center row">
@@ -123,8 +119,7 @@ const SocialInfo = () => {
                   style={{ textDecoration: 'none' }}
                   className="text-white"
                   target="_blank"
-                                    rel='noreferrer'
-
+                  rel="noreferrer"
                 >
                   Twitter
                   <i className="ms-3 bi bi-twitter twitt-icon"></i>
@@ -142,8 +137,7 @@ const SocialInfo = () => {
                   style={{ textDecoration: 'none' }}
                   className="text-white"
                   target="_blank"
-                                    rel='noreferrer'
-
+                  rel="noreferrer"
                 >
                   Telegram
                   <i className="ms-2 bi bi-telegram tele-icon"></i>

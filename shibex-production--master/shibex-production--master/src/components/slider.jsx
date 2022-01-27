@@ -1,6 +1,7 @@
 import desktop1 from '../images/shibexLogo/shibexLogo/desktop/desktop3.png';
 import desktop2 from '../images/shibexLogo/shibexLogo/desktop/desktop2.png';
-import desktop3 from '../images/shibexLogo/shibexLogo/desktop/desktop.png';import realMobile3 from '../images/shibexLogo/shibexLogo/mobile/realmobile3.png';
+import desktop3 from '../images/shibexLogo/shibexLogo/desktop/desktop.png';
+import realMobile3 from '../images/shibexLogo/shibexLogo/mobile/realmobile3.png';
 import realMobile2 from '../images/shibexLogo/shibexLogo/mobile/realmobile2.png';
 
 import realMobile1 from '../images/shibexLogo/shibexLogo/mobile/realmoblie1.png';
@@ -18,6 +19,7 @@ const variants = {
 const Slider = () => {
   return (
     <motion.div
+      id="carouselExampleControls"
       variants={variants}
       initial="hidden"
       animate="visible"
@@ -25,15 +27,24 @@ const Slider = () => {
       className="carousel slide   sliderShadow  sliderContainer"
       data-bs-ride="carousel"
     >
-      <ol className="carousel-indicators">
-        <li
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide-to="0"
-          className="active"
-        ></li>
-        <li data-bs-target="#carouselExampleFade" data-bs-slide-to="1"></li>
-        <li data-bs-target="#carouselExampleFade" data-bs-slide-to="2"></li>
-      </ol>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
       <div className="carousel-inner ">
         <div className="carousel-item active">
           <img
@@ -42,7 +53,7 @@ const Slider = () => {
             style={{ height: '100vh', width: '100%' }}
             alt="sliderImages"
           />
-           <img
+          <img
             src={realMobile3}
             alt="sliderMobile"
             className="mobileImg"
@@ -100,7 +111,7 @@ const Slider = () => {
               className="display-6 fw-bolder text-capitalize captionPara ecosystem "
               style={{ marginTop: '20px' }}
             >
-              An econosystem of arcade game based on play to burn modele.
+              An ecosystem of arcade game based on play to burn modele.
             </p>
           </div>
           <div className="carousel-caption third-caption mb-5  ">

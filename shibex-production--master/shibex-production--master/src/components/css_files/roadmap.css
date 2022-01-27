@@ -368,6 +368,9 @@ user agent stylesheet ol {
     0 0 40px rgb(98, 255, 25), 0 0 80px rgb(95, 95, 95) !important;
   color: green !important;
 }
+.roadmap-item {
+  line-height: 110px !important;
+}
 
 @media (min-width: 768px) {
   .process-vertical li .process-circle {

@@ -44,7 +44,7 @@ section {
 .custom-shape-divider-top-1642532432 .shape-fill {
   fill: #369fe3;
 }
-.copyRights{
+.copyRights {
   font-size: 0.8em;
   color: #369fe3;
   font-weight: bolder;
@@ -55,4 +55,7 @@ section {
     width: calc(100% + 1.3px);
     height: 115px;
   }
+}
+.colorChange {
+  color: rgb(248, 56, 88);
 }

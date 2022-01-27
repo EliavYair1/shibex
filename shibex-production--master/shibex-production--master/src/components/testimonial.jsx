@@ -88,7 +88,7 @@ const Testimonials = () => {
             className="testi-header text-capitalized headerTitle mt-5"
             animate={animation}
           >
-            The Shibex's
+            The Shibex Team
           </motion.h1>
           <div className="row align-items-center" data-bs-interval={3000}>
             <div className="col-md-6 testi-img">

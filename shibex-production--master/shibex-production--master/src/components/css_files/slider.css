@@ -47,8 +47,8 @@
   font-family: var(--gameFont);
   text-shadow: 0 0 15px #fcd032, 0 0 10px #fcd032;
 }
-.ecosystem{
-  font-size: 1.3em !important;
+.ecosystem {
+  font-size: 1.8em !important;
 }
 .first-caption .captionHeader {
   font-family: var(--gameFont);

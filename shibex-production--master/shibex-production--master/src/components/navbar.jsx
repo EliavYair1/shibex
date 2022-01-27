@@ -32,8 +32,8 @@ const Navbar = () => {
             <i className="bi bi-list text-info"></i>
           </span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarsExample03">
-          <ul className="navbar-nav me-auto mb-2 mb-md-0 myNav text-center col-12 d-flex justify-content-evenly">
+        <div className="collapse navbar-collapse " id="navbarsExample03">
+          <ul className="navbar-nav me-auto mb-2 mb-md-0 myNav  col-12 d-flex justify-content-evenly">
             <li className="nav-item">
               <motion.a
                 className="nav-link navLinkColor active fw-bold fs-4"
@@ -69,21 +69,6 @@ const Navbar = () => {
                 href="#"
               >
                 News
-              </motion.a>
-            </li>
-            <li className="nav-item">
-              <motion.a
-                className="nav-link navLinkColor fw-bold fs-4"
-                href={pdf}
-                download
-                tabIndex={-1}
-                aria-disabled="true"
-                whileHover={{ color: 'var(--redColor)' }}
-                whileTap={{ scale: 0.5, originX: 0 }}
-                target="_blank"
-                rel="noreferrer"
-              >
-                white paper
               </motion.a>
             </li>
           </ul>

@@ -11,7 +11,6 @@ const Timer = () => {
   });
 
   const animation = useAnimation();
-  const animation2 = useAnimation();
   useEffect(() => {
     if (inView) {
       animation.start({
@@ -24,6 +23,8 @@ const Timer = () => {
     }
   }, [inView, animation]);
 
+  const animation2 = useAnimation();
+
   useEffect(() => {
     if (inView) {
       animation2.start({
@@ -35,7 +36,19 @@ const Timer = () => {
       animation2.start({ x: '-200vw' });
     }
   }, [inView, animation2]);
+  const animation3 = useAnimation();
 
+  useEffect(() => {
+    if (inView) {
+      animation3.start({
+        opacity: 1,
+        transition: { delay: 0.1 },
+      });
+    }
+    if (!inView) {
+      animation3.start({ opacity: 0 });
+    }
+  }, [inView, animation3]);
   return (
     <>
       <section
@@ -72,7 +85,7 @@ const Timer = () => {
                 <div className="text-center text-light">
                   <div className="mb-4">
                     <h1 className="comingHeader">
-                      Shibex will be tradable on MimoSwap in
+                      Shibex will be tradable on QuickSwap
                     </h1>
                   </div>
                   <div>
@@ -132,15 +145,13 @@ const Timer = () => {
             </div>
           </div>
         </div>
-        <div className="container">
-          <div className="container-fluid">
-            <div className="row chartWrap">
-              <div className="col-2 col-lg-1 col-xl-2 col-md-1 col-sm-1 "></div>
-              <div className="col-10 col-lg-8 col-xl-10 col-md-10 col-sm-10 chart">
-                <ShibexChart />
-              </div>
+        <div className="container mt-5" ref={ref}>
+          <motion.div className="row chartWrap" animate={animation3}>
+            <div className="col-2 col-lg-1 col-xl-2 col-md-1 col-sm-1 "></div>
+            <div className="col-10 col-lg-8 col-xl-10 col-md-10 col-sm-10 chart">
+              <ShibexChart />
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

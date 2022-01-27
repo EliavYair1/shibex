@@ -53,9 +53,9 @@ const Footer = () => {
         <div className="row mb-4 justify-content-center">
           <div className="col-auto">
             <p className="text-center fs-6 mt-3" ref={ref}>
-              <motion.span className="color_11" animate={animation}>
+              <motion.h4 className="color_11 fw-bold " animate={animation}>
                 ShibexSoldiers are you ready? 🚀
-              </motion.span>
+              </motion.h4>
             </p>
           </div>
         </div>
@@ -68,7 +68,7 @@ const Footer = () => {
               <li className="nav-item">
                 <a
                   href="https://shibex-soldiers.web.app/"
-                  className="nav-link"
+                  className="nav-link text-dark"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -78,26 +78,21 @@ const Footer = () => {
               <li className="nav-item">
                 <a
                   href="https://swap.mimo.exchange/#/swap?inputCurrency=0x838403e073a79719a0927a16642ca7dcdc642bd5"
-                  className="nav-link"
+                  className="nav-link text-dark"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Buy
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item ">
                 <a
                   href="#"
-                  className="nav-link"
+                  className="nav-link text-dark"
                   target="_blank"
                   rel="noreferrer"
                 >
                   News
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href={pdf} className="nav-link" download>
-                  white paper
                 </a>
               </li>
             </motion.ul>
@@ -109,41 +104,65 @@ const Footer = () => {
               <motion.li className="nav-item" whileHover={{ color: 'white' }}>
                 <a
                   href="https://www.instagram.com/shibexsoldiers/"
-                  className="nav-link"
+                  className="nav-link text-dark"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="bi bi-instagram display-6"></i>
+                  <motion.i
+                    whileHover={{
+                      color: '#8a3ab9',
+                      transition: { duration: 0.1 },
+                    }}
+                    className="bi bi-instagram display-6"
+                  ></motion.i>
                 </a>
               </motion.li>
               <li className="nav-item">
                 <a
                   href=" https://twitter.com/ShibexSoldiers"
-                  className="nav-link"
+                  className="nav-link text-dark"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="bi bi-twitter display-6"></i>
+                  <motion.i
+                    whileHover={{
+                      color: '#1DA1F2',
+                      transition: { duration: 0.1 },
+                    }}
+                    className="bi bi-twitter display-6"
+                  ></motion.i>
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   href="https://swap.mimo.exchange/#/swap?inputCurrency=0x838403e073a79719a0927a16642ca7dcdc642bd5"
-                  className="nav-link"
+                  className="nav-link text-dark"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="bi bi-coin display-6"></i>
+                  <motion.i
+                    whileHover={{
+                      color: '#118C4F',
+                      transition: { duration: 0.1 },
+                    }}
+                    className="bi bi-coin display-6"
+                  ></motion.i>
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   href="https://t.me/ShibexToken"
-                  className="nav-link"
+                  className="nav-link text-dark"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="bi bi-telegram display-6"></i>
+                  <motion.i
+                    whileHover={{
+                      color: '#0088cc',
+                      transition: { duration: 0.1 },
+                    }}
+                    className="bi bi-telegram display-6"
+                  ></motion.i>
                 </a>
               </li>
             </motion.ul>
@@ -157,7 +176,7 @@ const Footer = () => {
               Inc.registered in the U.S. and other countries. Mac App Store is a
               service mark of Apple Inc. Google Play and the Google Play logo
               are trademarks of Google Inc. <br /> <br />
-              <span className="copyRights">
+              <span className="copyRights text-muted fw-bolder">
                 © This Site Was Designed And Developed By - Eliav Yair & Ofek
                 Abarbanel & Sagi Reuven{' '}
               </span>
