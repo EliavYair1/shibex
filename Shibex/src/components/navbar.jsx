@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import './css_files/navbar.css';
 import logo from '../images/shibexLogoSmall1.webp';
-import pdf from '../whitePaperShibex/up_white_paper.pdf';
+
 const Navbar = () => {
   return (
     <nav
