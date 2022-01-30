@@ -11,6 +11,7 @@ import { BrowserRouter } from 'react-router-dom';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 AOS.init();
+AOS.refresh();
 
 ReactDOM.render(
   <BrowserRouter>

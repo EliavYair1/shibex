@@ -7,8 +7,7 @@ import Testimonial from './components/testimonial';
 import GamePlay from './components/gamePlay';
 import Footer from './components/footer';
 import Roadmap from './components/roadmap';
-// import { Route, Switch } from 'react-router';
-// import ShibexNews from './components/ShibexNews';
+
 function App() {
   return (
     <div className="App min-vh-100">
