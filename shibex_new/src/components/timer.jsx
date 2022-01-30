@@ -95,7 +95,7 @@ const Timer = () => {
                     </h1>
                   </div>
                   <div>
-                    <span className="text-small text-dark fw-bolder fs-3 ms-5 comingHeader coming-soon mb-3">
+                    <span className="text-small text-white fw-bolder fs-3 ms-5 comingHeader coming-soon mb-3">
                       Coming Soon!
                     </span>
                   </div>

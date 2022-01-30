@@ -83,7 +83,7 @@ const Roadmap = () => {
                     Listing on MimoSwap
                   </h5>
                   <h5 className="mb-3  milestoneText text-white">
-                    Crosschain Swap Polygon
+                    Crosschain Polygon
                   </h5>
                   <h5 className="mb-3  milestoneText text-white">
                     Listing on QuickSwap

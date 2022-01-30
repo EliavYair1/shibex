@@ -2,6 +2,9 @@
   width: 20em;
   height: 5em;
 }
+.gamePlay-cont {
+  background-color: var(--whiteColor);
+}
 .gamePlay-container {
   height: 800px;
 }
@@ -29,32 +32,29 @@
   z-index: 10;
 }
 
-
-@media only screen and (max-width:400px) and (min-width: 350px) {
-     .video-container .video {
+@media only screen and (max-width: 400px) and (min-width: 350px) {
+  .video-container .video {
     top: 10px;
-    left:2em;
+    left: 2em;
     width: 300px;
     height: 180px;
-   
-  } 
-    .platBtn {
-      width: 10em;
-    }
-.platBtn .innerBtn {
-      font-size: 1.4em;
-    }
+  }
+  .platBtn {
+    width: 10em;
+  }
+  .platBtn .innerBtn {
+    font-size: 1.4em;
+  }
 }
 
 @media only screen and (max-width: 450px) and (min-width: 401px) {
-    .video-container .video {
+  .video-container .video {
     top: 10px;
-    left:2.5em;
+    left: 2.5em;
     width: 300px;
     height: 180px;
-   
-  } 
-  
+  }
+
   .platBtn {
     width: 12em;
   }
@@ -66,12 +66,12 @@
 }
 
 @media only screen and (max-width: 576px) and (min-width: 450px) {
-   .video-container .video {
+  .video-container .video {
     top: 10px;
     left: 80px;
     width: 350px;
     height: 200px;
-  } 
+  }
   .platBtn {
     width: 12em;
     height: 4em;
@@ -97,24 +97,25 @@
     top: 10px;
     left: 5px;
   }
-  
+
   .platBtn {
-    width:13em;
+    width: 13em;
     height: 3em;
-margin-left: 1em;  }
+    margin-left: 1em;
+  }
   .platBtn .innerBtn {
     font-size: 1.3em;
   }
 }
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
   .video-container .video {
-width: 800px;
-height: 400px;  
-margin-left: -170px; 
+    width: 800px;
+    height: 400px;
+    margin-left: -170px;
   }
-  
+
   .platBtn {
-    width:16em;
+    width: 16em;
     height: 5em;
     margin-right: 4em;
   }
@@ -124,8 +125,8 @@ margin-left: -170px;
 }
 @media only screen and (max-width: 1400px) and (min-width: 1201px) {
   .video-container .video {
-width: 800px;
-height: 400px; 
-margin-left: 20px; 
+    width: 800px;
+    height: 400px;
+    margin-left: 20px;
   }
 }

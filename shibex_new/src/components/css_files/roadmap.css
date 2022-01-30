@@ -342,7 +342,7 @@ user agent stylesheet ol {
 }
 
 .custom-shape-divider-bottom-1642543135 .shape-fill {
-  fill: #369fe3;
+  fill: var(--whiteColor);
 }
 
 /* For mobile devices */

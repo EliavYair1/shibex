@@ -1,13 +1,17 @@
 .text-light {
   color: #f8f9fa !important;
 }
+.nav,
+.nav-item i {
+  color: var(--whiteColor);
+}
 .pb-5,
 .py-5 {
   padding-bottom: 3rem !important;
 }
 
 .footerContainer {
-  background-color: #fcd032 !important;
+  background-color: var(--blackColor) !important;
   font-family: var(--gameFont);
 }
 footer {
@@ -42,13 +46,14 @@ section {
 }
 
 .custom-shape-divider-top-1642532432 .shape-fill {
-  fill: #369fe3;
+  fill: var(--whiteColor);
 }
 .copyRights {
   font-size: 0.8em;
   color: #369fe3;
   font-weight: bolder;
 }
+
 /** For mobile devices **/
 @media (max-width: 767px) {
   .custom-shape-divider-top-1642532432 svg {

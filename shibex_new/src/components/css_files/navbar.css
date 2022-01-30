@@ -3,10 +3,10 @@
   height: 2.5em;
 }
 .navbarColor {
-  background-color: #fcd032;
+  background-color: var(--whiteColor);
 }
 .nav-item .navLinkColor {
-  color: var(--blueColor);
+  color: var(--blackColor);
   font-family: var(--gameFont);
   display: flex;
   /* justify-content: space-around; */

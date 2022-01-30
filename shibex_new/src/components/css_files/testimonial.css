@@ -1,5 +1,5 @@
 .testimonial-section {
-  background-color: #fcd032;
+  background-color: var(--whiteColor);
   padding: 80px 0;
   margin-top: 100px;
   min-height: 80vh;
@@ -13,7 +13,7 @@
 .testi-img .circle {
   height: 360px;
   width: 360px;
-  background-color: #369fe3;
+  background-color: var(--blackColor);
   position: absolute;
   border-radius: 50%;
   left: 0;
@@ -33,11 +33,11 @@
 }
 
 .testi-header {
-  color: #ffff;
+  color: var(--blackColor);
   font-size: 5em;
   text-align: center;
   position: relative;
-  bottom: 150px;
+  bottom: 130px;
   font-family: var(--gameFont);
   font-weight: bolder;
 }
@@ -55,6 +55,7 @@
 .teamMates {
   font-weight: 900;
   font-size: 2.5em !important;
+  color: var(--blackColor);
 }
 
 .paragraph {
@@ -62,6 +63,7 @@
   line-height: 1.3em;
   text-align: center;
   font-size: 1.5em !important;
+  color: var(--blackColor);
 }
 
 .testi-item h3,
@@ -96,7 +98,7 @@
 }
 
 .custom-shape-divider-top-desktop .shape-fill {
-  fill: #369fe3;
+  fill: var(--blackColor);
 }
 
 @media (max-width: 991px) {
@@ -156,6 +158,6 @@
   }
 
   .custom-shape-divider-top-mobile .shape-fill {
-    fill: #369fe3;
+    fill: var(--blackColor);
   }
 }

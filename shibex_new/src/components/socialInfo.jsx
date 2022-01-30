@@ -90,7 +90,6 @@ const SocialInfo = () => {
           <span className="header" ref={ref}>
             <motion.h1
               className="display-5 fw-bold lh-1 mb-3 mb-5 text-center headerTitle"
-              style={{ color: '#fcd032' }}
               animate={animation}
             >
               Shibex Soldiers

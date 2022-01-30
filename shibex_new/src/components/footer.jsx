@@ -32,7 +32,7 @@ const Footer = () => {
   }, [inView, animation2]);
   return (
     <footer
-      className="footerContainer pb-5 bg-primary-3 text-dark"
+      className="footerContainer pb-5 bg-primary-3 "
       style={{ position: 'relative' }}
     >
       <div className="custom-shape-divider-top-1642532432">
@@ -52,7 +52,11 @@ const Footer = () => {
         <div className="row mb-4 justify-content-center">
           <div className="col-auto">
             <p className="text-center fs-6 mt-3" ref={ref}>
-              <motion.span className="color_11 fw-bold " animate={animation}>
+              <motion.span
+                className="color_11 fw-bold "
+                style={{ color: 'var(--whiteColor)' }}
+                animate={animation}
+              >
                 ShibexSoldiers are you ready? 🚀
               </motion.span>
             </p>
@@ -67,7 +71,7 @@ const Footer = () => {
               <li className="nav-item">
                 <a
                   href="https://shibex-soldiers.web.app/"
-                  className="nav-link text-dark"
+                  className="nav-link text-white"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -77,7 +81,7 @@ const Footer = () => {
               <li className="nav-item">
                 <a
                   href="https://swap.mimo.exchange/#/swap?inputCurrency=0x838403e073a79719a0927a16642ca7dcdc642bd5"
-                  className="nav-link text-dark"
+                  className="nav-link text-white"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -87,7 +91,7 @@ const Footer = () => {
               <li className="nav-item">
                 <a
                   href="#"
-                  className="nav-link text-dark"
+                  className="nav-link text-white"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -99,11 +103,11 @@ const Footer = () => {
         </div>
         <div className="row justify-content-center mt-5 mb-5">
           <div className="col-auto" ref={ref}>
-            <motion.ul className="nav" animate={animation2}>
-              <motion.li className="nav-item" whileHover={{ color: 'white' }}>
+            <motion.ul className="nav " animate={animation2}>
+              <motion.li className="nav-item">
                 <a
                   href="https://www.instagram.com/shibexsoldiers/"
-                  className="nav-link text-dark"
+                  className="nav-link    "
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -112,14 +116,15 @@ const Footer = () => {
                       color: '#8a3ab9',
                       transition: { duration: 0.1 },
                     }}
-                    className="bi bi-instagram display-6"
+                    className="bi bi-instagram display-6 "
+                    style={{ color: 'var(--whiteColor)' }}
                   ></motion.i>
                 </a>
               </motion.li>
               <li className="nav-item">
                 <a
                   href=" https://twitter.com/ShibexSoldiers"
-                  className="nav-link text-dark"
+                  className="nav-link "
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -128,14 +133,15 @@ const Footer = () => {
                       color: '#1DA1F2',
                       transition: { duration: 0.1 },
                     }}
-                    className="bi bi-twitter display-6"
+                    className="bi bi-twitter display-6 "
+                    style={{ color: 'var(--whiteColor)' }}
                   ></motion.i>
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   href="https://swap.mimo.exchange/#/swap?inputCurrency=0x838403e073a79719a0927a16642ca7dcdc642bd5"
-                  className="nav-link text-dark"
+                  className="nav-link "
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -144,14 +150,15 @@ const Footer = () => {
                       color: '#118C4F',
                       transition: { duration: 0.1 },
                     }}
-                    className="bi bi-coin display-6"
+                    className="bi bi-coin display-6 "
+                    style={{ color: 'var(--whiteColor)' }}
                   ></motion.i>
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   href="https://t.me/ShibexToken"
-                  className="nav-link text-dark"
+                  className="nav-link "
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -160,7 +167,8 @@ const Footer = () => {
                       color: '#0088cc',
                       transition: { duration: 0.1 },
                     }}
-                    className="bi bi-telegram display-6"
+                    className="bi bi-telegram display-6 "
+                    style={{ color: 'var(--whiteColor)' }}
                   ></motion.i>
                 </a>
               </li>

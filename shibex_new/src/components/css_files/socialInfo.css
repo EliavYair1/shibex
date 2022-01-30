@@ -15,6 +15,7 @@
 .headerTitle {
   font-family: var(--gameFont);
   z-index: 10;
+  color: var(--whiteColor);
 }
 .btn {
   font-family: var(--gameFont);
@@ -37,7 +38,7 @@
 }
 
 .custom-shape-divider-top-1642533550 .shape-fill {
-  fill: #fcd032;
+  fill: var(--whiteColor);
 }
 
 @media only screen and (max-width: 576px) and (min-width: 350px) {
