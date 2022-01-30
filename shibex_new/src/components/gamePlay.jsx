@@ -1,43 +1,43 @@
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import shivaVideo from '../videos/PRUEBATrim.mp4';
-import './css_files/gamePlay.css';
+/* import shivaVideo from '../videos/PRUEBATrim.mp4';
+ */import './css_files/gamePlay.css';
 
 const GamePlay = () => {
   const { ref, inView } = useInView({
-    threshold: 0.25,
+    threshold: 0.1,
   });
 
   const animation = useAnimation();
 
   useEffect(() => {
-
     if (inView) {
       //end point of animation
       animation.start({
-        y: '0',opacity:1
+        y: '0',
+        opacity: 1,
       });
     }
     if (!inView) {
       //start point of animation
-      animation.start({ y: '-200px',opacity:0 });
+      animation.start({ y: '-200px', opacity: 0 });
     }
   }, [inView, animation]);
 
   const animation2 = useAnimation();
 
   useEffect(() => {
-
     if (inView) {
       //end point of animation2
       animation2.start({
-        y: '30px',opacity:1
+        y: '0',
+        opacity: 1,
       });
     }
     if (!inView) {
       //start point of animation2
-      animation2.start({ y: '200px',opacity:0});
+      animation2.start({ y: '200px', opacity: 0 });
     }
   }, [inView, animation2]);
 
@@ -56,14 +56,21 @@ const GamePlay = () => {
             </div>
           </div>
         </div>
-        <br /><br />
+        <br />
+        <br />
         <div className="row ">
           <div className="col-12 col-sm-4  video-container ">
-            <video className="video" controls src={shivaVideo}></video>
+            <iframe
+              className="video"
+              src="https://www.youtube.com/embed/mNea_RSx0CM"
+              title="Shibex Ride GamePlay"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
-        <div className="row">
-          <div className="col-12 text-center buttonWrapper mt-5" ref={ref}>
+        <div className="row text-center">
+          <div className="col-12  buttonWrapper mt-5" ref={ref}>
             <motion.button
               className="platBtn btn-lg btn-warning rounded-pill"
               animate={animation}
@@ -80,6 +87,7 @@ const GamePlay = () => {
             </motion.button>
           </div>
         </div>
+        <br /><br />
       </div>
     </>
   );

@@ -3,7 +3,6 @@ import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import './css_files/footer.css';
-import pdf from '../whitePaperShibex/up_white_paper.pdf';
 
 const Footer = () => {
   const { ref, inView } = useInView({
@@ -53,9 +52,9 @@ const Footer = () => {
         <div className="row mb-4 justify-content-center">
           <div className="col-auto">
             <p className="text-center fs-6 mt-3" ref={ref}>
-              <motion.h4 className="color_11 fw-bold " animate={animation}>
+              <motion.span className="color_11 fw-bold " animate={animation}>
                 ShibexSoldiers are you ready? 🚀
-              </motion.h4>
+              </motion.span>
             </p>
           </div>
         </div>
@@ -85,7 +84,7 @@ const Footer = () => {
                   Buy
                 </a>
               </li>
-              <li className="nav-item ">
+              <li className="nav-item">
                 <a
                   href="#"
                   className="nav-link text-dark"
